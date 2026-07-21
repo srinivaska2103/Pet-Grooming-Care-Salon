@@ -1,0 +1,397 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link 
+  rel="icon" 
+  type="image/svg+xml" 
+  href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%230d9488' stroke-width='2'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253'/%3E%3C/svg%3E" 
+/>
+  <title>PawLuxe | Contact Salon & Concierge</title>
+  <meta name="description" content="Get in touch with PawLuxe Pet Salon. Schedule appointments, view working hours, location map, and emergency pet care contacts." />
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: { 600: '#0d9488', 700: '#0f766e' },
+            accent: { 600: '#4f46e5' }
+          },
+          fontFamily: {
+            heading: ['Outfit', 'sans-serif'],
+            body: ['Plus Jakarta Sans', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100 min-h-screen flex flex-col antialiased">
+
+  <!-- NAVIGATION HEADER -->
+  <header id="main-header" class="sticky top-0 z-50 transition-all duration-300 glass-nav border-b border-slate-200/50 dark:border-slate-800/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- LOGO -->
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div
+          class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-teal-600 to-indigo-600 flex items-center justify-center text-white shadow-lg shadow-teal-500/25 group-hover:scale-105 transition-transform">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
+            </path>
+          </svg>
+        </div>
+        <div>
+          <span class="font-heading font-semibold text-2xl tracking-tight text-teal-600 dark:text-teal-400">Paw<span class="text-indigo-500 dark:text-indigo-400">Luxe</span></span>
+          <span class="block text-[10px] uppercase tracking-widest text-slate-400 font-medium">Pet Spa & Salon</span>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center lg:gap-3 xl:gap-7">
+        <a href="index.html" class="nav-link text-sm lg:text-xs xl:text-sm font-medium text-slate-600 dark:text-slate-300 transition-colors hover:text-teal-600 dark:hover:text-teal-400">Home</a>
+        <a href="home2.html" class="nav-link text-sm lg:text-xs xl:text-sm font-medium text-slate-600 dark:text-slate-300 transition-colors hover:text-teal-600 dark:hover:text-teal-400">Home 2</a>
+        <a href="aboutus.html" class="nav-link text-sm lg:text-xs xl:text-sm font-medium text-slate-600 dark:text-slate-300 transition-colors hover:text-teal-600 dark:hover:text-teal-400">About Us</a>
+        <a href="services.html" class="nav-link text-sm lg:text-xs xl:text-sm font-medium text-slate-600 dark:text-slate-300 transition-colors hover:text-teal-600 dark:hover:text-teal-400">Services</a>
+        <a href="gallery.html" class="nav-link text-sm lg:text-xs xl:text-sm font-medium text-slate-600 dark:text-slate-300 transition-colors hover:text-teal-600 dark:hover:text-teal-400">Gallery</a>
+        <a href="pricing.html" class="nav-link text-sm lg:text-xs xl:text-sm font-medium text-slate-600 dark:text-slate-300 transition-colors hover:text-teal-600 dark:hover:text-teal-400">Pricing</a>
+        <a href="contact.html" class="nav-link text-sm lg:text-xs xl:text-sm font-medium text-teal-600 dark:text-teal-400">Contact</a>
+        <a href="dashboard.html" class="nav-link text-sm lg:text-xs xl:text-sm font-medium text-slate-600 dark:text-slate-300 transition-colors hover:text-teal-600 dark:hover:text-teal-400">Dashboard</a>
+      </nav>
+
+            <!-- UTILITY & CTAS -->
+      <div class="hidden lg:flex items-center gap-3">
+        <!-- Dark Mode Toggle -->
+        <button type="button" aria-label="Toggle Theme"
+          class="theme-toggle-btn w-10 h-10 flex items-center justify-center rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:text-teal-600 dark:hover:text-teal-400 transition-colors">
+          <svg class="theme-icon-sun w-5 h-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z">
+            </path>
+          </svg>
+          <svg class="theme-icon-moon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+          </svg>
+        </button>
+
+        <!-- LTR/RTL Toggle -->
+        <button type="button" aria-label="Toggle Direction"
+          class="dir-toggle-btn px-3 h-10 flex items-center justify-center rounded-xl border border-slate-200 dark:border-slate-800 text-xs font-semibold text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+          <span class="dir-toggle-label">LTR</span>
+        </button>
+
+        <!-- Login Link -->
+        <a href="login.html"
+          class="w-[100px] lg:w-[90px] xl:w-[100px] h-10 flex items-center justify-center rounded-xl bg-indigo-50 text-indigo-600 dark:bg-indigo-500/10 dark:text-indigo-400 hover:bg-indigo-100 dark:hover:bg-indigo-500/20 transition-colors font-medium text-sm lg:text-xs xl:text-sm">Login</a>
+
+        <!-- Book Now CTA -->
+        <a href="booknow.html"
+          class="w-[100px] lg:w-[90px] xl:w-[100px] h-10 flex items-center justify-center rounded-xl bg-gradient-to-r from-teal-600 to-indigo-600 hover:from-teal-500 hover:to-indigo-500 text-white font-medium text-sm lg:text-xs xl:text-sm shadow-md shadow-teal-500/20 hover:shadow-lg hover:shadow-teal-500/30 transition-all hover:-translate-y-0.5">
+          Book Now
+        </a>
+      </div>
+
+      <button id="mobile-menu-btn" type="button" class="lg:hidden p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-menu"
+      class="hidden lg:hidden absolute left-0 right-0 top-full h-[calc(100vh-5rem)] overflow-y-auto bg-white/95 dark:bg-slate-900/95 backdrop-blur-xl z-50 px-6 py-8 flex flex-col border-t border-slate-200/50 dark:border-slate-800/50">
+      <div class="flex flex-col space-y-3 font-medium text-sm">
+        <a href="index.html" class="text-slate-600 dark:text-slate-300">Home</a>
+        <a href="home2.html" class="text-slate-600 dark:text-slate-300">Home 2</a>
+        <a href="aboutus.html" class="text-slate-600 dark:text-slate-300">About Us</a>
+        <a href="services.html" class="text-slate-600 dark:text-slate-300">Services</a>
+        <a href="gallery.html" class="text-slate-600 dark:text-slate-300">Gallery</a>
+        <a href="pricing.html" class="text-slate-600 dark:text-slate-300">Pricing</a>
+        <a href="contact.html" class="text-teal-600 font-semibold">Contact</a>
+        <a href="dashboard.html" class="text-slate-600 dark:text-slate-300">Dashboard</a>
+      </div>
+      <div class="mt-auto pt-8 border-t border-slate-200/50 dark:border-slate-800/50 flex flex-col space-y-4">
+        <div class="flex items-center gap-4">
+          <button type="button" aria-label="Toggle Theme" class="theme-toggle-btn w-10 h-10 flex items-center justify-center rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300">
+            <svg class="theme-icon-sun w-5 h-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+            <svg class="theme-icon-moon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+          </button>
+          <button type="button" aria-label="Toggle Direction" class="dir-toggle-btn px-4 h-10 flex items-center justify-center rounded-xl border border-slate-200 dark:border-slate-800 text-xs font-semibold text-slate-600 dark:text-slate-300">
+            <span class="dir-toggle-label">LTR</span>
+          </button>
+        </div>
+        <a href="login.html" class="w-full h-12 flex items-center justify-center rounded-xl bg-indigo-50 text-indigo-600 dark:bg-indigo-500/10 dark:text-indigo-400 font-semibold text-sm">Login</a>
+        <a href="booknow.html" class="w-full h-12 flex items-center justify-center rounded-xl bg-gradient-to-r from-teal-600 to-indigo-600 text-white font-semibold text-sm shadow-md">Book Now</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- SECTION 1: HERO SECTION (Hero image MUST appear on RIGHT side) -->
+  <section class="relative pt-12 pb-20 md:pt-20 md:pb-32 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Content -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          <span class="inline-block px-4 py-1.5 rounded-full bg-teal-50 dark:bg-teal-950/60 border border-teal-200 dark:border-teal-800 text-teal-700 dark:text-teal-300 text-xs font-semibold uppercase tracking-wider">
+            Salon Concierge
+          </span>
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-heading font-semibold tracking-tight text-slate-900 dark:text-white leading-tight">
+            We'd Love To Hear From <span class="gradient-text">You & Your Pet</span>.
+          </h1>
+          <p class="text-base sm:text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+            Have a question about specific breed grooming, special skin allergies, or customized spa packages? Our salon concierge team is standing by to help.
+          </p>
+          <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+            <a href="booknow.html" class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-gradient-to-r from-teal-600 to-indigo-600 text-white font-semibold text-base shadow-xl text-center">
+              Book Online Now
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Image (Mandatory HERO image on RIGHT side) -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            <img src="assets/contacthero" alt="Salon Front Desk Concierge" class="rounded-3xl shadow-2xl object-cover w-full h-[480px]" />
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: CONTACT CARDS & FORM -->
+  <section class="py-20 bg-slate-100/60 dark:bg-slate-900/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <!-- Left: Contact Details & Hours -->
+        <div class="lg:col-span-5 space-y-6">
+  
+  <!-- Location Card -->
+  <div class="glass-card p-6 rounded-3xl space-y-4">
+    <div class="flex items-center gap-4">
+      <div class="w-12 h-12 rounded-2xl bg-teal-500/10 text-teal-600 dark:text-teal-400 flex items-center justify-center shrink-0">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0Z"/>
+          <circle cx="12" cy="10" r="3"/>
+        </svg>
+      </div>
+      <div>
+        <h4 class="font-heading font-semibold text-slate-900 dark:text-white">Salon Location</h4>
+        <p class="text-xs text-slate-500">124 Luxury Paw Way, Beverly Hills, CA 90210</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Phone Card -->
+  <div class="glass-card p-6 rounded-3xl space-y-4">
+    <div class="flex items-center gap-4">
+      <div class="w-12 h-12 rounded-2xl bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 flex items-center justify-center shrink-0">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+      </div>
+      <div>
+        <h4 class="font-heading font-semibold text-slate-900 dark:text-white">Phone & Concierge</h4>
+        <p class="text-xs text-slate-500">(800) 555-PAWS / (800) 555-7297</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Email Card -->
+  <div class="glass-card p-6 rounded-3xl space-y-4">
+    <div class="flex items-center gap-4">
+      <div class="w-12 h-12 rounded-2xl bg-amber-500/10 text-amber-600 dark:text-amber-400 flex items-center justify-center shrink-0">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect width="20" height="16" x="2" y="4" rx="2"/>
+          <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+        </svg>
+      </div>
+      <div>
+        <h4 class="font-heading font-semibold text-slate-900 dark:text-white">Email Address</h4>
+        <p class="text-xs text-slate-500">hello@pawluxe.com / spa@pawluxe.com</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Working Hours Card -->
+  <div class="glass-card p-6 rounded-3xl space-y-3">
+    <div class="flex items-center gap-2">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-teal-600 dark:text-teal-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"/>
+        <polyline points="12 6 12 12 16 14"/>
+      </svg>
+      <h4 class="font-heading font-semibold text-slate-900 dark:text-white text-base">Working Hours</h4>
+    </div>
+    <div class="space-y-2 text-xs text-slate-600 dark:text-slate-400 pt-1">
+      <div class="flex justify-between"><span>Monday - Friday:</span> <span class="font-semibold text-slate-900 dark:text-white">8:00 AM - 7:00 PM</span></div>
+      <div class="flex justify-between"><span>Saturday:</span> <span class="font-semibold text-slate-900 dark:text-white">9:00 AM - 6:00 PM</span></div>
+      <div class="flex justify-between"><span>Sunday:</span> <span class="font-semibold text-teal-600 dark:text-teal-400">10:00 AM - 4:00 PM</span></div>
+    </div>
+  </div>
+
+</div>
+
+        <!-- Right: Contact Form -->
+        <div class="lg:col-span-7">
+          <div class="glass-card p-8 sm:p-10 rounded-3xl space-y-6">
+            <h3 class="text-2xl font-heading font-semibold text-slate-900 dark:text-white">Send Us A Message</h3>
+            <form onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent to our concierge.');" class="space-y-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Your Full Name</label>
+                  <input type="text" required placeholder="Jane Doe" class="w-full px-4 py-3 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500" />
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Phone Number</label>
+                  <input type="tel" required placeholder="(555) 000-0000" class="w-full px-4 py-3 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500" />
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Email Address</label>
+                <input type="email" required placeholder="jane@example.com" class="w-full px-4 py-3 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500" />
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Pet Breed & Name</label>
+                <input type="text" placeholder="e.g. Golden Retriever (Max)" class="w-full px-4 py-3 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500" />
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Your Message</label>
+                <textarea rows="4" required placeholder="How can we assist your fur baby?" class="w-full px-4 py-3 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500"></textarea>
+              </div>
+
+              <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-teal-600 to-indigo-600 text-white font-semibold text-sm shadow-xl hover:-translate-y-0.5 transition-all">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION 3: MAP PLACEHOLDER -->
+ <section class="py-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="glass-card rounded-3xl p-8 text-center space-y-4 bg-slate-200 dark:bg-slate-800/50 overflow-hidden">
+      <!-- <span class="text-3xl">🗺️</span> -->
+      <h4 class="font-heading font-semibold text-xl text-slate-900 dark:text-white">Salon Location Map</h4>
+      <p class="text-xs text-slate-500 max-w-md mx-auto">Visit our flagship boutique salon located at 124 Luxury Paw Way, Beverly Hills, CA. Free dedicated pet owner parking behind the building.</p>
+      
+      <!-- Embedded Google Map -->
+      <div class="w-full h-64 md:h-80 rounded-2xl overflow-hidden shadow-inner mt-4">
+        <iframe 
+          class="w-full h-full border-0"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13221.84852924089!2d-118.411667!3d34.0736204!2m3!1f0!2f0!3f0!2m3!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bc04d6d147ab%3A0xd6c7c379fd081ed1!2sBeverly%20Hills%2C%20CA!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Salon Location Map">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- FOOTER -->
+<footer class="bg-slate-900 text-slate-400 pt-16 pb-6 border-t border-slate-800">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-10 pb-8 border-b border-slate-800">
+      
+      <!-- Col 1: Brand Info & Social Icons -->
+      <div class="lg:col-span-2 space-y-4">
+        <!-- Footer Logo -->
+        <a href="index.html" class="flex items-center gap-3 group">
+          <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-teal-600 to-indigo-600 flex items-center justify-center text-white shadow-lg shadow-teal-500/25 group-hover:scale-105 transition-transform">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+            </svg>
+          </div>
+          <span class="font-heading font-semibold text-2xl tracking-tight text-teal-400">Paw<span class="text-indigo-400">Luxe</span></span>
+        </a>
+        <p class="text-sm text-slate-400 max-w-sm leading-relaxed">
+          PawLuxe is an award-winning luxury pet grooming and organic spa salon dedicated to providing fear-free, gentle, and world-class care for dogs and cats.
+        </p>
+        
+        <!-- Social Icons -->
+        <div class="flex items-center gap-3 pt-2">
+          <a href="#" aria-label="Facebook" class="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center text-slate-400 hover:text-teal-400 hover:bg-slate-700 transition-all hover:-translate-y-0.5">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram" class="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center text-slate-400 hover:text-teal-400 hover:bg-slate-700 transition-all hover:-translate-y-0.5">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="#" aria-label="X" class="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center text-slate-400 hover:text-teal-400 hover:bg-slate-700 transition-all hover:-translate-y-0.5">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="#" aria-label="LinkedIn" class="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center text-slate-400 hover:text-teal-400 hover:bg-slate-700 transition-all hover:-translate-y-0.5">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.762-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <a href="#" aria-label="YouTube" class="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center text-slate-400 hover:text-teal-400 hover:bg-slate-700 transition-all hover:-translate-y-0.5">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Col 2: Quick Links -->
+      <div>
+        <h5 class="font-heading font-semibold text-white text-base mb-4">Main Menu</h5>
+        <ul class="space-y-2.5 text-sm">
+          <li><a href="index.html" class="hover:text-teal-400 transition-colors">Home</a></li>
+          <li><a href="home2.html" class="hover:text-teal-400 transition-colors">Home 2</a></li>
+          <li><a href="aboutus.html" class="hover:text-teal-400 transition-colors">About Us</a></li>
+          <li><a href="services.html" class="hover:text-teal-400 transition-colors">Services</a></li>
+          <li><a href="gallery.html" class="hover:text-teal-400 transition-colors">Gallery</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Navigation Links -->
+      <div>
+        <h5 class="font-heading font-semibold text-white text-base mb-4">Pages & Booking</h5>
+        <ul class="space-y-2.5 text-sm">
+          <li><a href="pricing.html" class="hover:text-teal-400 transition-colors">Pricing</a></li>
+          <li><a href="contact.html" class="hover:text-teal-400 transition-colors">Contact</a></li>
+          <li><a href="404.html" class="hover:text-teal-400 transition-colors">404</a></li>
+          <li><a href="dashboard.html" class="hover:text-teal-400 transition-colors">Dashboard</a></li>
+          <li><a href="comingsoon.html" class="hover:text-teal-400 transition-colors">Coming Soon</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Newsletter -->
+      <div>
+        <h5 class="font-heading font-semibold text-white text-base mb-4">Newsletter</h5>
+        <p class="text-sm text-slate-400 mb-4 leading-relaxed">Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.</p>
+        <form class="flex flex-col gap-3" onsubmit="event.preventDefault();">
+          <input type="email" placeholder="Enter your email" required class="w-full px-4 py-2.5 rounded-xl bg-slate-800 border border-slate-700 text-sm text-white focus:outline-none focus:border-teal-500 focus:ring-1 focus:ring-teal-500 transition-colors" />
+          <button type="submit" class="w-full py-2.5 rounded-xl bg-gradient-to-r from-teal-600 to-indigo-600 hover:from-teal-500 hover:to-indigo-500 text-white font-medium text-sm transition-colors">Subscribe</button>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- Bottom Copyright Bar -->
+    <div class="py-6 flex flex-col md:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+      <p>&copy; 2026 PawLuxe Pet Grooming & Spa Salon. All rights reserved.</p>
+      <div class="flex gap-6">
+        <a href="#" class="hover:text-slate-400 transition-colors">Privacy Policy</a>
+        <a href="#" class="hover:text-slate-400 transition-colors">Terms of Service</a>
+        <a href="#" class="hover:text-slate-400 transition-colors">Cookie Preferences</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
