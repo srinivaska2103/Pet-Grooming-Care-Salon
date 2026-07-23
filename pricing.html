@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
@@ -173,7 +173,7 @@
         <h3 class="text-3xl font-heading font-semibold text-slate-900 dark:text-white">Choose Your Pet's Weight Category</h3>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-lg lg:max-w-none mx-auto">
         
         <!-- Small Pet Card -->
         <div class="glass-card p-8 rounded-3xl space-y-6 hover:-translate-y-2 transition-all duration-300 equal-height-card">
@@ -185,7 +185,7 @@
               <span class="text-4xl font-bold font-heading text-slate-900 dark:text-white">$49</span>
               <span class="text-xs text-slate-500">/ starting rate</span>
             </div>
-            <ul class="space-y-3 text-xs text-slate-600 dark:text-slate-400">
+            <ul class="space-y-3 text-xs text-slate-600 dark:text-slate-300">
               <li class="flex items-center gap-2">✓ Full Bath & Gentle Blow-Dry</li>
               <li class="flex items-center gap-2">✓ Nail Trim & Ear Cleansing</li>
               <li class="flex items-center gap-2">✓ Light Sanitary Trim</li>
@@ -205,7 +205,7 @@
               <span class="text-4xl font-bold font-heading text-slate-900 dark:text-white">$69</span>
               <span class="text-xs text-slate-500">/ starting rate</span>
             </div>
-            <ul class="space-y-3 text-xs text-slate-600 dark:text-slate-400">
+            <ul class="space-y-3 text-xs text-slate-600 dark:text-slate-300">
               <li class="flex items-center gap-2">✓ Hydro-Massage Ozone Bath</li>
               <li class="flex items-center gap-2">✓ Full Haircut & Scissor Styling</li>
               <li class="flex items-center gap-2">✓ Nail Dremel Buffing</li>
@@ -225,7 +225,7 @@
               <span class="text-4xl font-bold font-heading text-slate-900 dark:text-white">$89</span>
               <span class="text-xs text-slate-500">/ starting rate</span>
             </div>
-            <ul class="space-y-3 text-xs text-slate-600 dark:text-slate-400">
+            <ul class="space-y-3 text-xs text-slate-600 dark:text-slate-300">
               <li class="flex items-center gap-2">✓ Deep Fur De-Matting & Wash</li>
               <li class="flex items-center gap-2">✓ High-Velocity Blow-Out</li>
               <li class="flex items-center gap-2">✓ Full Body Precision Trim</li>
@@ -275,9 +275,10 @@
       <div 
         id="card-silver" 
         onclick="selectPlan('silver')"
-        class="glass-card relative p-6 sm:p-8 rounded-3xl space-y-6 cursor-pointer border-2 border-transparent hover:border-teal-500/50 transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl"
+        class="glass-card flex flex-col h-full relative p-6 sm:p-8 rounded-3xl cursor-pointer border-2 border-transparent hover:border-teal-500/50 transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl"
       >
-        <div class="space-y-2">
+        <div class="flex-grow space-y-6 mb-6">
+          <div class="space-y-2">
           <div class="flex justify-between items-center">
             <h4 class="text-xl sm:text-2xl font-heading font-semibold text-slate-900 dark:text-white">Silver Spa Pass</h4>
             <span id="badge-silver" class="hidden text-[10px] font-bold uppercase tracking-wider bg-teal-500 text-white px-2.5 py-1 rounded-full">Selected</span>
@@ -302,7 +303,7 @@
             <span><strong>10% Off</strong> All Boutique Products</span>
           </li>
         </ul>
-
+        </div>
         <button 
           id="btn-silver"
           class="w-full py-3 px-4 text-xs sm:text-sm font-semibold rounded-2xl bg-slate-200 dark:bg-slate-700 hover:bg-teal-600 hover:text-white text-slate-800 dark:text-slate-200 transition-all duration-200 shadow-sm"
@@ -315,14 +316,14 @@
       <div 
         id="card-gold" 
         onclick="selectPlan('gold')"
-        class="glass-card relative p-6 sm:p-8 rounded-3xl space-y-6 cursor-pointer border-2 border-indigo-500 hover:border-indigo-600 transition-all duration-300 transform hover:-translate-y-1 shadow-indigo-500/10 shadow-xl"
+        class="glass-card flex flex-col h-full relative p-6 sm:p-8 rounded-3xl cursor-pointer border-2 border-indigo-500 hover:border-indigo-600 transition-all duration-300 transform hover:-translate-y-1 shadow-indigo-500/10 shadow-xl"
       >
         <!-- Popular Badge -->
-        <span class="absolute -top-3.5 right-6 bg-gradient-to-r from-indigo-500 to-purple-600 text-white text-[10px] sm:text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow-md">
+        <span class="absolute -top-3.5 right-6 bg-gradient-to-r from-indigo-500 to-purple-600 text-white text-[10px] sm:text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow-md z-10">
           Most Popular
         </span>
-
-        <div class="space-y-2">
+        <div class="flex-grow space-y-6 mb-6">
+          <div class="space-y-2">
           <div class="flex justify-between items-center">
             <h4 class="text-xl sm:text-2xl font-heading font-semibold text-slate-900 dark:text-white">Gold VIP Unlimited Pass</h4>
             <span id="badge-gold" class="hidden text-[10px] font-bold uppercase tracking-wider bg-indigo-600 text-white px-2.5 py-1 rounded-full">Selected</span>
@@ -347,7 +348,7 @@
             <span><strong>Priority Access</strong> Weekend Booking</span>
           </li>
         </ul>
-
+        </div>
         <button 
           id="btn-gold"
           class="w-full py-3 px-4 text-xs sm:text-sm font-semibold rounded-2xl bg-indigo-600 hover:bg-indigo-700 text-white transition-all duration-200 shadow-md shadow-indigo-500/20"
@@ -590,7 +591,10 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
             </svg>
           </div>
-          <span class="font-heading font-semibold text-2xl tracking-tight text-teal-400">Paw<span class="text-indigo-400">Luxe</span></span>
+          <div>
+            <span class="font-heading font-semibold text-2xl tracking-tight text-teal-400 block">Paw<span class="text-indigo-400">Luxe</span></span>
+            <span class="block text-[10px] uppercase tracking-widest text-slate-400 font-medium">Pet Spa & Salon</span>
+          </div>
         </a>
         <p class="text-sm text-slate-400 max-w-sm leading-relaxed">
           PawLuxe is an award-winning luxury pet grooming and organic spa salon dedicated to providing fear-free, gentle, and world-class care for dogs and cats.

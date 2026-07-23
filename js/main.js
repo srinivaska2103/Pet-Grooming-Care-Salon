@@ -131,6 +131,14 @@ function initDashboardMobileMenu() {
     dashMenuBtn.addEventListener('click', () => {
       dashSidebar.classList.toggle('hidden');
     });
+
+    // Close the sidebar when any navigation link is clicked (on mobile)
+    const dashLinks = dashSidebar.querySelectorAll('a');
+    dashLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        dashSidebar.classList.add('hidden');
+      });
+    });
   }
 }
 

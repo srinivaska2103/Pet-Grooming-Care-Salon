@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr" class="scroll-smooth">
 
 <head>
@@ -243,7 +243,9 @@
               <div class="flex items-center gap-3">
                 <div
                   class="w-10 h-10 rounded-xl bg-teal-500/10 text-teal-600 dark:text-teal-400 flex items-center justify-center font-bold">
-                  🐾
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 8.5c1.1 0 2-1.343 2-3s-.9-3-2-3-2 1.343-2 3 .9 3 2 3zm-4.5.5c1.1 0 2-1.343 2-3s-.9-3-2-3-2 1.343-2 3 .9 3 2 3zm9 0c1.1 0 2-1.343 2-3s-.9-3-2-3-2 1.343-2 3 .9 3 2 3zm-4.5 2c-3.5 0-6 2.5-6 6 0 2 1.5 4 3.5 4s2-1 2.5-1 1.5 1 2.5 1 3.5-2 3.5-4c0-3.5-2.5-6-6-6z"/>
+                  </svg>
                 </div>
                 <div>
                   <h4 class="text-xs font-semibold text-slate-900 dark:text-white">Stress-Free Grooming</h4>
@@ -379,322 +381,192 @@
         <h2 class="text-3xl md:text-4xl font-heading font-semibold text-slate-900 dark:text-white">Featured Grooming Packages</h2>
         <p class="text-sm text-slate-600 dark:text-slate-400 mt-3">Choose the perfect pampering experience — from a quick refresh to a full luxury makeover.</p>
       </div>
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 gap-y-12 items-stretch mt-6">
 
   <!-- Package 1: Essential Groom -->
-  <div class="glass-card rounded-3xl overflow-hidden border border-slate-200/80 dark:border-slate-800 flex flex-col justify-between hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl hover:shadow-teal-500/10 group">
-    <div>
-      <!-- Image Header Container -->
-      <div class="relative h-56 overflow-hidden">
-        <img src="assets/Essential Groom1" alt="Essential Groom" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" />
-        <!-- Soft Image Gradient Overlay -->
-        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent"></div>
-        
-        <!-- Category Badge -->
-        <div class="absolute top-4 left-4 px-3.5 py-1.5 rounded-full bg-white/20 dark:bg-slate-900/40 backdrop-blur-md text-xs font-semibold text-white border border-white/20 shadow-sm">
-          Essential
-        </div>
-
-        <!-- Floating Price Tag over Image -->
-        <div class="absolute bottom-4 left-4 flex items-baseline gap-1 text-white">
-          <span class="text-3xl font-heading font-bold">$49</span>
-          <span class="text-xs text-slate-300 font-normal">/ session</span>
-        </div>
-      </div>
-
-      <!-- Card Content Body -->
-      <div class="p-6 sm:p-7 space-y-4">
-        <div class="flex items-center justify-between">
-          <h4 class="font-heading font-semibold text-2xl text-slate-900 dark:text-white">Essential Groom</h4>
-          <span class="inline-flex items-center gap-1.5 text-xs text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-800/80 px-2.5 py-1 rounded-lg">
-            <svg class="w-3.5 h-3.5 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-            60 min
-          </span>
-        </div>
-
-        <!-- Features Checklist -->
-        <ul class="space-y-3 text-xs sm:text-sm text-slate-600 dark:text-slate-300 pt-2 border-t border-slate-200/60 dark:border-slate-800">
-          <li class="flex items-center gap-2.5">
-            <svg class="w-4 h-4 text-teal-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
-            <span>Hydro-massage bath</span>
-          </li>
-          <li class="flex items-center gap-2.5">
-            <svg class="w-4 h-4 text-teal-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
-            <span>Blow-dry & brush out</span>
-          </li>
-          <li class="flex items-center gap-2.5">
-            <svg class="w-4 h-4 text-teal-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
-            <span>Nail trim & ear clean</span>
-          </li>
-        </ul>
+  <div class="glass-card rounded-[2rem] overflow-visible border border-slate-200/80 dark:border-slate-800 group hover:-translate-y-2 transition-all duration-500 hover:shadow-2xl hover:shadow-teal-500/10 flex flex-col relative bg-white/50 dark:bg-slate-900/50">
+    <div class="relative h-56 rounded-t-[2rem] overflow-hidden">
+      <img src="assets/Essential Groom1" alt="Essential Groom" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" />
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-60"></div>
+      <div class="absolute top-5 left-5 px-4 py-1.5 rounded-full bg-white/20 dark:bg-slate-900/40 backdrop-blur-md text-xs font-semibold text-white border border-white/20 shadow-sm">
+        Essential
       </div>
     </div>
+    
+    <!-- Floating Price Badge -->
+    <div class="absolute top-[14rem] right-6 bg-gradient-to-br from-teal-500 to-teal-700 text-white shadow-xl shadow-teal-500/30 rounded-2xl px-4 py-2 flex flex-col items-center justify-center transform -translate-y-1/2 border border-teal-400/30 z-10 group-hover:scale-110 transition-transform duration-300">
+       <span class="text-2xl font-bold font-heading leading-none">$49</span>
+       <span class="text-[10px] uppercase tracking-wider text-teal-100 font-medium mt-1">Session</span>
+    </div>
 
-    <!-- Action Button -->
-    <div class="px-6 pb-6 sm:px-7 sm:pb-7">
-      <a href="booknow.html" class="w-full h-12 flex items-center justify-center rounded-2xl bg-slate-200/80 dark:bg-slate-800 hover:bg-teal-600 hover:text-white text-slate-900 dark:text-white text-xs sm:text-sm font-semibold transition-all duration-300 shadow-sm">
-        Book Essential
-      </a>
+    <div class="p-7 pt-10 flex flex-col flex-1">
+      <h4 class="font-heading font-bold text-2xl text-slate-900 dark:text-white">Essential Groom</h4>
+      <div class="flex items-center gap-1.5 mt-2 text-xs font-medium text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-800/80 self-start px-2.5 py-1 rounded-lg">
+        <svg class="w-3.5 h-3.5 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+        <span>60 min</span>
+      </div>
+      <ul class="mt-6 space-y-3 text-sm text-slate-600 dark:text-slate-300 flex-1">
+        <li class="flex items-center gap-3"><div class="w-1.5 h-1.5 rounded-full bg-teal-500 shrink-0"></div>Hydro-massage bath</li>
+        <li class="flex items-center gap-3"><div class="w-1.5 h-1.5 rounded-full bg-teal-500 shrink-0"></div>Blow-dry & brush out</li>
+        <li class="flex items-center gap-3"><div class="w-1.5 h-1.5 rounded-full bg-teal-500 shrink-0"></div>Nail trim & ear clean</li>
+      </ul>
+      <a href="booknow.html" class="mt-8 w-full py-3.5 flex items-center justify-center rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-teal-600 hover:text-white text-slate-700 dark:text-slate-200 text-sm font-semibold transition-colors duration-300">Book Essential</a>
     </div>
   </div>
 
   <!-- Package 2: Deluxe Spa (POPULAR FEATURED CARD) -->
-  <div class="glass-card rounded-3xl overflow-hidden border-2 border-indigo-500/80 dark:border-indigo-500 flex flex-col justify-between hover:-translate-y-2 transition-all duration-300 shadow-xl shadow-indigo-500/10 group relative">
-    
-    <!-- Top Most Popular Pill Badge -->
-    <span class="absolute top-3 right-3 z-20 bg-gradient-to-r from-teal-500 to-indigo-600 text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow-md">
+  <div class="glass-card rounded-[2rem] overflow-visible border-2 border-indigo-500 group hover:-translate-y-2 transition-all duration-500 shadow-2xl shadow-indigo-500/20 flex flex-col relative bg-white/80 dark:bg-slate-900/80 scale-105 z-10">
+    <span class="absolute -top-4 left-1/2 -translate-x-1/2 z-20 bg-gradient-to-r from-teal-500 to-indigo-600 text-white text-[11px] font-bold uppercase tracking-widest px-6 py-1.5 rounded-full shadow-lg border border-white/20">
       Most Popular
     </span>
-
-    <div>
-      <!-- Image Header Container -->
-      <div class="relative h-56 overflow-hidden">
-        <img src="assets/Delux Spa1" alt="Deluxe Spa" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" />
-        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent"></div>
-        
-        <div class="absolute top-4 left-4 px-3.5 py-1.5 rounded-full bg-indigo-500/30 backdrop-blur-md text-xs font-semibold text-white border border-indigo-300/30 shadow-sm">
-          Deluxe
-        </div>
-
-        <div class="absolute bottom-4 left-4 flex items-baseline gap-1 text-white">
-          <span class="text-3xl font-heading font-bold">$79</span>
-          <span class="text-xs text-slate-300 font-normal">/ session</span>
-        </div>
-      </div>
-
-      <!-- Card Content Body -->
-      <div class="p-6 sm:p-7 space-y-4">
-        <div class="flex items-center justify-between">
-          <h4 class="font-heading font-semibold text-2xl text-slate-900 dark:text-white">Deluxe and Spa</h4>
-          <span class="inline-flex items-center gap-1.5 text-xs text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-800/80 px-2.5 py-1 rounded-lg">
-            <svg class="w-3.5 h-3.5 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-            90 min
-          </span>
-        </div>
-
-        <!-- Features Checklist -->
-        <ul class="space-y-3 text-xs sm:text-sm text-slate-600 dark:text-slate-300 pt-2 border-t border-slate-200/60 dark:border-slate-800">
-          <li class="flex items-center gap-2.5">
-            <svg class="w-4 h-4 text-indigo-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
-            <span>Everything in Essential</span>
-          </li>
-          <li class="flex items-center gap-2.5">
-            <svg class="w-4 h-4 text-indigo-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
-            <span>Full precision hair trim & style</span>
-          </li>
-          <li class="flex items-center gap-2.5">
-            <svg class="w-4 h-4 text-indigo-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
-            <span>Nail buffing & paw balm care</span>
-          </li>
-        </ul>
+    
+    <div class="relative h-56 rounded-t-[2rem] overflow-hidden">
+      <img src="assets/Delux Spa1" alt="Deluxe Spa" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" />
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-60"></div>
+      <div class="absolute top-5 left-5 px-4 py-1.5 rounded-full bg-indigo-500/40 backdrop-blur-md text-xs font-semibold text-white border border-indigo-300/30 shadow-sm">
+        Deluxe
       </div>
     </div>
+    
+    <!-- Floating Price Badge -->
+    <div class="absolute top-[14rem] right-6 bg-gradient-to-br from-indigo-500 to-indigo-700 text-white shadow-xl shadow-indigo-500/30 rounded-2xl px-4 py-2 flex flex-col items-center justify-center transform -translate-y-1/2 border border-indigo-400/30 z-10 group-hover:scale-110 transition-transform duration-300">
+       <span class="text-2xl font-bold font-heading leading-none">$79</span>
+       <span class="text-[10px] uppercase tracking-wider text-indigo-100 font-medium mt-1">Session</span>
+    </div>
 
-    <!-- Gradient Primary Action Button -->
-    <div class="px-6 pb-6 sm:px-7 sm:pb-7">
-      <a href="booknow.html" class="w-full h-12 flex items-center justify-center rounded-2xl bg-gradient-to-r from-teal-600 via-teal-500 to-indigo-600 hover:from-teal-500 hover:to-indigo-500 text-white text-xs sm:text-sm font-semibold shadow-md shadow-indigo-500/20 hover:shadow-lg transition-all duration-300">
-        Book Deluxe Spa
-      </a>
+    <div class="p-7 pt-10 flex flex-col flex-1">
+      <h4 class="font-heading font-bold text-2xl text-slate-900 dark:text-white">Deluxe and Spa</h4>
+      <div class="flex items-center gap-1.5 mt-2 text-xs font-medium text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-800/80 self-start px-2.5 py-1 rounded-lg">
+        <svg class="w-3.5 h-3.5 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+        <span>90 min</span>
+      </div>
+      <ul class="mt-6 space-y-3 text-sm text-slate-600 dark:text-slate-300 flex-1">
+        <li class="flex items-center gap-3"><div class="w-1.5 h-1.5 rounded-full bg-indigo-500 shrink-0"></div>Everything in Essential</li>
+        <li class="flex items-center gap-3"><div class="w-1.5 h-1.5 rounded-full bg-indigo-500 shrink-0"></div>Full precision hair trim & style</li>
+        <li class="flex items-center gap-3"><div class="w-1.5 h-1.5 rounded-full bg-indigo-500 shrink-0"></div>Nail buffing & paw balm care</li>
+      </ul>
+      <a href="booknow.html" class="mt-8 w-full py-3.5 flex items-center justify-center rounded-xl bg-gradient-to-r from-teal-600 to-indigo-600 hover:from-teal-500 hover:to-indigo-500 text-white text-sm font-semibold shadow-md shadow-indigo-500/20 transition-all duration-300">Book Deluxe Spa</a>
     </div>
   </div>
 
   <!-- Package 3: Luxury Makeover -->
-  <div class="glass-card rounded-3xl overflow-hidden border border-slate-200/80 dark:border-slate-800 flex flex-col justify-between hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl hover:shadow-teal-500/10 group">
-    <div>
-      <div class="relative h-56 overflow-hidden">
-        <img src="assets/Luxury Makeover1" alt="Luxury Makeover" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" />
-        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent"></div>
-        
-        <div class="absolute top-4 left-4 px-3.5 py-1.5 rounded-full bg-white/20 dark:bg-slate-900/40 backdrop-blur-md text-xs font-semibold text-white border border-white/20 shadow-sm">
-          Luxury
-        </div>
-
-        <div class="absolute bottom-4 left-4 flex items-baseline gap-1 text-white">
-          <span class="text-3xl font-heading font-bold">$129</span>
-          <span class="text-xs text-slate-300 font-normal">/ session</span>
-        </div>
-      </div>
-
-      <div class="p-6 sm:p-7 space-y-4">
-        <div class="flex items-center justify-between">
-          <h4 class="font-heading font-semibold text-2xl text-slate-900 dark:text-white">Luxury Makeover</h4>
-          <span class="inline-flex items-center gap-1.5 text-xs text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-800/80 px-2.5 py-1 rounded-lg">
-            <svg class="w-3.5 h-3.5 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-            2.5 hrs
-          </span>
-        </div>
-
-        <ul class="space-y-3 text-xs sm:text-sm text-slate-600 dark:text-slate-300 pt-2 border-t border-slate-200/60 dark:border-slate-800">
-          <li class="flex items-center gap-2.5">
-            <svg class="w-4 h-4 text-teal-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
-            <span>Everything included in Deluxe</span>
-          </li>
-          <li class="flex items-center gap-2.5">
-            <svg class="w-4 h-4 text-teal-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
-            <span>Dead Sea mud spa treatment</span>
-          </li>
-          <li class="flex items-center gap-2.5">
-            <svg class="w-4 h-4 text-teal-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
-            <span>VIP private lounge relaxation</span>
-          </li>
-        </ul>
+  <div class="glass-card rounded-[2rem] overflow-visible border border-slate-200/80 dark:border-slate-800 group hover:-translate-y-2 transition-all duration-500 hover:shadow-2xl hover:shadow-teal-500/10 flex flex-col relative bg-white/50 dark:bg-slate-900/50">
+    <div class="relative h-56 rounded-t-[2rem] overflow-hidden">
+      <img src="assets/Luxury Makeover1" alt="Luxury Makeover" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" />
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-60"></div>
+      <div class="absolute top-5 left-5 px-4 py-1.5 rounded-full bg-white/20 dark:bg-slate-900/40 backdrop-blur-md text-xs font-semibold text-white border border-white/20 shadow-sm">
+        Luxury
       </div>
     </div>
+    
+    <!-- Floating Price Badge -->
+    <div class="absolute top-[14rem] right-6 bg-gradient-to-br from-teal-500 to-teal-700 text-white shadow-xl shadow-teal-500/30 rounded-2xl px-4 py-2 flex flex-col items-center justify-center transform -translate-y-1/2 border border-teal-400/30 z-10 group-hover:scale-110 transition-transform duration-300">
+       <span class="text-2xl font-bold font-heading leading-none">$129</span>
+       <span class="text-[10px] uppercase tracking-wider text-teal-100 font-medium mt-1">Session</span>
+    </div>
 
-    <div class="px-6 pb-6 sm:px-7 sm:pb-7">
-      <a href="booknow.html" class="w-full h-12 flex items-center justify-center rounded-2xl bg-slate-200/80 dark:bg-slate-800 hover:bg-teal-600 hover:text-white text-slate-900 dark:text-white text-xs sm:text-sm font-semibold transition-all duration-300 shadow-sm">
-        Book Luxury Package
-      </a>
+    <div class="p-7 pt-10 flex flex-col flex-1">
+      <h4 class="font-heading font-bold text-2xl text-slate-900 dark:text-white">Luxury Makeover</h4>
+      <div class="flex items-center gap-1.5 mt-2 text-xs font-medium text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-800/80 self-start px-2.5 py-1 rounded-lg">
+        <svg class="w-3.5 h-3.5 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+        <span>2.5 hrs</span>
+      </div>
+      <ul class="mt-6 space-y-3 text-sm text-slate-600 dark:text-slate-300 flex-1">
+        <li class="flex items-center gap-3"><div class="w-1.5 h-1.5 rounded-full bg-teal-500 shrink-0"></div>Everything included in Deluxe</li>
+        <li class="flex items-center gap-3"><div class="w-1.5 h-1.5 rounded-full bg-teal-500 shrink-0"></div>Dead Sea mud spa treatment</li>
+        <li class="flex items-center gap-3"><div class="w-1.5 h-1.5 rounded-full bg-teal-500 shrink-0"></div>VIP private lounge relaxation</li>
+      </ul>
+      <a href="booknow.html" class="mt-8 w-full py-3.5 flex items-center justify-center rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-teal-600 hover:text-white text-slate-700 dark:text-slate-200 text-sm font-semibold transition-colors duration-300">Book Luxury Package</a>
     </div>
   </div>
 
   <!-- Package 4: Puppy First Groom -->
-  <div class="glass-card rounded-3xl overflow-hidden border border-slate-200/80 dark:border-slate-800 flex flex-col justify-between hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl hover:shadow-teal-500/10 group">
-    <div>
-      <div class="relative h-56 overflow-hidden">
-        <img src="assets/Puppy First Groom1" alt="Puppy First Groom" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" />
-        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent"></div>
-        
-        <div class="absolute top-4 left-4 px-3.5 py-1.5 rounded-full bg-white/20 dark:bg-slate-900/40 backdrop-blur-md text-xs font-semibold text-white border border-white/20 shadow-sm">
-          Puppy
-        </div>
-
-        <div class="absolute bottom-4 left-4 flex items-baseline gap-1 text-white">
-          <span class="text-3xl font-heading font-bold">$39</span>
-          <span class="text-xs text-slate-300 font-normal">/ session</span>
-        </div>
-      </div>
-
-      <div class="p-6 sm:p-7 space-y-4">
-        <div class="flex items-center justify-between">
-          <h4 class="font-heading font-semibold text-2xl text-slate-900 dark:text-white">Puppy First Groom</h4>
-          <span class="inline-flex items-center gap-1.5 text-xs text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-800/80 px-2.5 py-1 rounded-lg">
-            <svg class="w-3.5 h-3.5 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-            45 min
-          </span>
-        </div>
-
-        <ul class="space-y-3 text-xs sm:text-sm text-slate-600 dark:text-slate-300 pt-2 border-t border-slate-200/60 dark:border-slate-800">
-          <li class="flex items-center gap-2.5">
-            <svg class="w-4 h-4 text-teal-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
-            <span>Gentle intro bath</span>
-          </li>
-          <li class="flex items-center gap-2.5">
-            <svg class="w-4 h-4 text-teal-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
-            <span>Light trim & face shaping</span>
-          </li>
-          <li class="flex items-center gap-2.5">
-            <svg class="w-4 h-4 text-teal-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
-            <span>Positive reinforcement handling</span>
-          </li>
-        </ul>
+  <div class="glass-card rounded-[2rem] overflow-visible border border-slate-200/80 dark:border-slate-800 group hover:-translate-y-2 transition-all duration-500 hover:shadow-2xl hover:shadow-teal-500/10 flex flex-col relative bg-white/50 dark:bg-slate-900/50 mt-4 lg:mt-0">
+    <div class="relative h-56 rounded-t-[2rem] overflow-hidden">
+      <img src="assets/Puppy First Groom1" alt="Puppy First Groom" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" />
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-60"></div>
+      <div class="absolute top-5 left-5 px-4 py-1.5 rounded-full bg-white/20 dark:bg-slate-900/40 backdrop-blur-md text-xs font-semibold text-white border border-white/20 shadow-sm">
+        Puppy
       </div>
     </div>
+    
+    <div class="absolute top-[14rem] right-6 bg-gradient-to-br from-teal-500 to-teal-700 text-white shadow-xl shadow-teal-500/30 rounded-2xl px-4 py-2 flex flex-col items-center justify-center transform -translate-y-1/2 border border-teal-400/30 z-10 group-hover:scale-110 transition-transform duration-300">
+       <span class="text-2xl font-bold font-heading leading-none">$39</span>
+       <span class="text-[10px] uppercase tracking-wider text-teal-100 font-medium mt-1">Session</span>
+    </div>
 
-    <div class="px-6 pb-6 sm:px-7 sm:pb-7">
-      <a href="booknow.html" class="w-full h-12 flex items-center justify-center rounded-2xl bg-slate-200/80 dark:bg-slate-800 hover:bg-teal-600 hover:text-white text-slate-900 dark:text-white text-xs sm:text-sm font-semibold transition-all duration-300 shadow-sm">
-        Book Puppy Groom
-      </a>
+    <div class="p-7 pt-10 flex flex-col flex-1">
+      <h4 class="font-heading font-bold text-2xl text-slate-900 dark:text-white">Puppy First Groom</h4>
+      <div class="flex items-center gap-1.5 mt-2 text-xs font-medium text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-800/80 self-start px-2.5 py-1 rounded-lg">
+        <svg class="w-3.5 h-3.5 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+        <span>45 min</span>
+      </div>
+      <ul class="mt-6 space-y-3 text-sm text-slate-600 dark:text-slate-300 flex-1">
+        <li class="flex items-center gap-3"><div class="w-1.5 h-1.5 rounded-full bg-teal-500 shrink-0"></div>Gentle intro bath</li>
+        <li class="flex items-center gap-3"><div class="w-1.5 h-1.5 rounded-full bg-teal-500 shrink-0"></div>Light trim & face shaping</li>
+        <li class="flex items-center gap-3"><div class="w-1.5 h-1.5 rounded-full bg-teal-500 shrink-0"></div>Positive reinforcement handling</li>
+      </ul>
+      <a href="booknow.html" class="mt-8 w-full py-3.5 flex items-center justify-center rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-teal-600 hover:text-white text-slate-700 dark:text-slate-200 text-sm font-semibold transition-colors duration-300">Book Puppy Groom</a>
     </div>
   </div>
 
   <!-- Package 5: Senior Pet Care -->
-  <div class="glass-card rounded-3xl overflow-hidden border border-slate-200/80 dark:border-slate-800 flex flex-col justify-between hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl hover:shadow-teal-500/10 group">
-    <div>
-      <div class="relative h-56 overflow-hidden">
-        <img src="assets/Senior Pet Care1" alt="Senior Pet Care" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" />
-        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent"></div>
-        
-        <div class="absolute top-4 left-4 px-3.5 py-1.5 rounded-full bg-white/20 dark:bg-slate-900/40 backdrop-blur-md text-xs font-semibold text-white border border-white/20 shadow-sm">
-          Senior
-        </div>
-
-        <div class="absolute bottom-4 left-4 flex items-baseline gap-1 text-white">
-          <span class="text-3xl font-heading font-bold">$59</span>
-          <span class="text-xs text-slate-300 font-normal">/ session</span>
-        </div>
-      </div>
-
-      <div class="p-6 sm:p-7 space-y-4">
-        <div class="flex items-center justify-between">
-          <h4 class="font-heading font-semibold text-2xl text-slate-900 dark:text-white">Senior Pet Care</h4>
-          <span class="inline-flex items-center gap-1.5 text-xs text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-800/80 px-2.5 py-1 rounded-lg">
-            <svg class="w-3.5 h-3.5 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-            75 min
-          </span>
-        </div>
-
-        <ul class="space-y-3 text-xs sm:text-sm text-slate-600 dark:text-slate-300 pt-2 border-t border-slate-200/60 dark:border-slate-800">
-          <li class="flex items-center gap-2.5">
-            <svg class="w-4 h-4 text-teal-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
-            <span>Extra gentle handling</span>
-          </li>
-          <li class="flex items-center gap-2.5">
-            <svg class="w-4 h-4 text-teal-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
-            <span>Joint-friendly warm bath</span>
-          </li>
-          <li class="flex items-center gap-2.5">
-            <svg class="w-4 h-4 text-teal-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
-            <span>Coat conditioning & gentle trim</span>
-          </li>
-        </ul>
+  <div class="glass-card rounded-[2rem] overflow-visible border border-slate-200/80 dark:border-slate-800 group hover:-translate-y-2 transition-all duration-500 hover:shadow-2xl hover:shadow-teal-500/10 flex flex-col relative bg-white/50 dark:bg-slate-900/50 mt-4 lg:mt-0">
+    <div class="relative h-56 rounded-t-[2rem] overflow-hidden">
+      <img src="assets/Senior Pet Care1" alt="Senior Pet Care" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" />
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-60"></div>
+      <div class="absolute top-5 left-5 px-4 py-1.5 rounded-full bg-white/20 dark:bg-slate-900/40 backdrop-blur-md text-xs font-semibold text-white border border-white/20 shadow-sm">
+        Senior
       </div>
     </div>
+    
+    <div class="absolute top-[14rem] right-6 bg-gradient-to-br from-teal-500 to-teal-700 text-white shadow-xl shadow-teal-500/30 rounded-2xl px-4 py-2 flex flex-col items-center justify-center transform -translate-y-1/2 border border-teal-400/30 z-10 group-hover:scale-110 transition-transform duration-300">
+       <span class="text-2xl font-bold font-heading leading-none">$59</span>
+       <span class="text-[10px] uppercase tracking-wider text-teal-100 font-medium mt-1">Session</span>
+    </div>
 
-    <div class="px-6 pb-6 sm:px-7 sm:pb-7">
-      <a href="booknow.html" class="w-full h-12 flex items-center justify-center rounded-2xl bg-slate-200/80 dark:bg-slate-800 hover:bg-teal-600 hover:text-white text-slate-900 dark:text-white text-xs sm:text-sm font-semibold transition-all duration-300 shadow-sm">
-        Book Senior Care
-      </a>
+    <div class="p-7 pt-10 flex flex-col flex-1">
+      <h4 class="font-heading font-bold text-2xl text-slate-900 dark:text-white">Senior Pet Care</h4>
+      <div class="flex items-center gap-1.5 mt-2 text-xs font-medium text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-800/80 self-start px-2.5 py-1 rounded-lg">
+        <svg class="w-3.5 h-3.5 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+        <span>75 min</span>
+      </div>
+      <ul class="mt-6 space-y-3 text-sm text-slate-600 dark:text-slate-300 flex-1">
+        <li class="flex items-center gap-3"><div class="w-1.5 h-1.5 rounded-full bg-teal-500 shrink-0"></div>Extra gentle handling</li>
+        <li class="flex items-center gap-3"><div class="w-1.5 h-1.5 rounded-full bg-teal-500 shrink-0"></div>Joint-friendly warm bath</li>
+        <li class="flex items-center gap-3"><div class="w-1.5 h-1.5 rounded-full bg-teal-500 shrink-0"></div>Coat conditioning & gentle trim</li>
+      </ul>
+      <a href="booknow.html" class="mt-8 w-full py-3.5 flex items-center justify-center rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-teal-600 hover:text-white text-slate-700 dark:text-slate-200 text-sm font-semibold transition-colors duration-300">Book Senior Care</a>
     </div>
   </div>
 
   <!-- Package 6: Cat Grooming Spa -->
-  <div class="glass-card rounded-3xl overflow-hidden border border-slate-200/80 dark:border-slate-800 flex flex-col justify-between hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl hover:shadow-teal-500/10 group">
-    <div>
-      <div class="relative h-56 overflow-hidden">
-        <img src="assets/Cat Grooming Spa1" alt="Cat Grooming Spa" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" />
-        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent"></div>
-        
-        <div class="absolute top-4 left-4 px-3.5 py-1.5 rounded-full bg-white/20 dark:bg-slate-900/40 backdrop-blur-md text-xs font-semibold text-white border border-white/20 shadow-sm">
-          Cat Spa
-        </div>
-
-        <div class="absolute bottom-4 left-4 flex items-baseline gap-1 text-white">
-          <span class="text-3xl font-heading font-bold">$69</span>
-          <span class="text-xs text-slate-300 font-normal">/ session</span>
-        </div>
-      </div>
-
-      <div class="p-6 sm:p-7 space-y-4">
-        <div class="flex items-center justify-between">
-          <h4 class="font-heading font-semibold text-2xl text-slate-900 dark:text-white">Cat Grooming Spa</h4>
-          <span class="inline-flex items-center gap-1.5 text-xs text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-800/80 px-2.5 py-1 rounded-lg">
-            <svg class="w-3.5 h-3.5 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-            60 min
-          </span>
-        </div>
-
-        <ul class="space-y-3 text-xs sm:text-sm text-slate-600 dark:text-slate-300 pt-2 border-t border-slate-200/60 dark:border-slate-800">
-          <li class="flex items-center gap-2.5">
-            <svg class="w-4 h-4 text-teal-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
-            <span>Stress-free private suite bath</span>
-          </li>
-          <li class="flex items-center gap-2.5">
-            <svg class="w-4 h-4 text-teal-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
-            <span>De-shedding treatment</span>
-          </li>
-          <li class="flex items-center gap-2.5">
-            <svg class="w-4 h-4 text-teal-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
-            <span>Nail trim & coat polish</span>
-          </li>
-        </ul>
+  <div class="glass-card rounded-[2rem] overflow-visible border border-slate-200/80 dark:border-slate-800 group hover:-translate-y-2 transition-all duration-500 hover:shadow-2xl hover:shadow-teal-500/10 flex flex-col relative bg-white/50 dark:bg-slate-900/50 mt-4 lg:mt-0">
+    <div class="relative h-56 rounded-t-[2rem] overflow-hidden">
+      <img src="assets/Cat Grooming Spa1" alt="Cat Grooming Spa" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" />
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-60"></div>
+      <div class="absolute top-5 left-5 px-4 py-1.5 rounded-full bg-white/20 dark:bg-slate-900/40 backdrop-blur-md text-xs font-semibold text-white border border-white/20 shadow-sm">
+        Cat Spa
       </div>
     </div>
+    
+    <div class="absolute top-[14rem] right-6 bg-gradient-to-br from-teal-500 to-teal-700 text-white shadow-xl shadow-teal-500/30 rounded-2xl px-4 py-2 flex flex-col items-center justify-center transform -translate-y-1/2 border border-teal-400/30 z-10 group-hover:scale-110 transition-transform duration-300">
+       <span class="text-2xl font-bold font-heading leading-none">$69</span>
+       <span class="text-[10px] uppercase tracking-wider text-teal-100 font-medium mt-1">Session</span>
+    </div>
 
-    <div class="px-6 pb-6 sm:px-7 sm:pb-7">
-      <a href="booknow.html" class="w-full h-12 flex items-center justify-center rounded-2xl bg-slate-200/80 dark:bg-slate-800 hover:bg-teal-600 hover:text-white text-slate-900 dark:text-white text-xs sm:text-sm font-semibold transition-all duration-300 shadow-sm">
-        Book Cat Spa
-      </a>
+    <div class="p-7 pt-10 flex flex-col flex-1">
+      <h4 class="font-heading font-bold text-2xl text-slate-900 dark:text-white">Cat Grooming Spa</h4>
+      <div class="flex items-center gap-1.5 mt-2 text-xs font-medium text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-800/80 self-start px-2.5 py-1 rounded-lg">
+        <svg class="w-3.5 h-3.5 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+        <span>60 min</span>
+      </div>
+      <ul class="mt-6 space-y-3 text-sm text-slate-600 dark:text-slate-300 flex-1">
+        <li class="flex items-center gap-3"><div class="w-1.5 h-1.5 rounded-full bg-teal-500 shrink-0"></div>Stress-free private suite bath</li>
+        <li class="flex items-center gap-3"><div class="w-1.5 h-1.5 rounded-full bg-teal-500 shrink-0"></div>De-shedding treatment</li>
+        <li class="flex items-center gap-3"><div class="w-1.5 h-1.5 rounded-full bg-teal-500 shrink-0"></div>Nail trim & coat polish</li>
+      </ul>
+      <a href="booknow.html" class="mt-8 w-full py-3.5 flex items-center justify-center rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-teal-600 hover:text-white text-slate-700 dark:text-slate-200 text-sm font-semibold transition-colors duration-300">Book Cat Spa</a>
     </div>
   </div>
 
@@ -702,99 +574,75 @@
     </div>
   </section>
 
-  <!-- SECTION 4: POPULAR GROOMING PACKAGES -->
-  <section class="py-20">
+  <!-- SECTION 2: INTERACTIVE PRICING TABLES BY PET SIZE -->
+  <section class="py-20 bg-slate-100/60 dark:bg-slate-900/30">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
       <div class="text-center max-w-3xl mx-auto mb-16">
-        <h2 class="text-xs font-semibold uppercase tracking-wider text-teal-600 dark:text-teal-400 mb-2">Transparent
-          Pricing</h2>
-        <h3 class="text-3xl sm:text-4xl font-heading font-semibold text-slate-900 dark:text-white">Popular Grooming &
-          Spa Packages</h3>
+        <h2 class="text-xs font-semibold uppercase tracking-wider text-teal-600 dark:text-teal-400 mb-2">Select Pet Size</h2>
+        <h3 class="text-3xl font-heading font-semibold text-slate-900 dark:text-white">Choose Your Pet's Weight Category</h3>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-
-        <!-- Package 1 -->
-        <div
-          class="glass-card rounded-3xl p-8 border border-slate-200 dark:border-slate-800 hover:border-teal-500 transition-all duration-300 hover:shadow-xl equal-height-card">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-lg lg:max-w-none mx-auto">
+        
+        <!-- Small Pet Card -->
+        <div class="glass-card p-8 rounded-3xl space-y-6 hover:-translate-y-2 transition-all duration-300 equal-height-card">
           <div>
-            <span
-              class="px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-xs font-medium text-slate-600 dark:text-slate-300">Basic
-              Pampering</span>
-            <h4 class="text-2xl font-heading font-semibold text-slate-900 dark:text-white mt-4 mb-2">Essential Bath</h4>
-            <div class="flex items-baseline gap-1 mb-6">
+            <span class="px-3 py-1 rounded-full bg-teal-100 dark:bg-teal-900/40 text-teal-700 dark:text-teal-300 text-xs font-semibold">Small Pets (1 - 20 lbs)</span>
+            <h4 class="text-2xl font-heading font-semibold text-slate-900 dark:text-white mt-4">Toy Breeds & Kittens</h4>
+            <p class="text-xs text-slate-500 mt-1">Chihuahuas, Yorkies, Shih Tzus, Kittens</p>
+            <div class="flex items-baseline gap-1 my-6">
               <span class="text-4xl font-bold font-heading text-slate-900 dark:text-white">$49</span>
-              <span class="text-sm text-slate-500">/ session</span>
+              <span class="text-xs text-slate-500">/ starting rate</span>
             </div>
-            <ul class="space-y-3 text-sm text-slate-600 dark:text-slate-300 mb-8">
-              <li class="flex items-center gap-2">✓ Warm Hydro-Massage Wash</li>
-              <li class="flex items-center gap-2">✓ Gentle Blow-Dry & Fluff</li>
-              <li class="flex items-center gap-2">✓ Ear Cleaning & Deodorizing</li>
-              <li class="flex items-center gap-2">✓ Nail Trim & Buffing</li>
+            <ul class="space-y-3 text-xs text-slate-600 dark:text-slate-300">
+              <li class="flex items-center gap-2">✓ Full Bath & Gentle Blow-Dry</li>
+              <li class="flex items-center gap-2">✓ Nail Trim & Ear Cleansing</li>
+              <li class="flex items-center gap-2">✓ Light Sanitary Trim</li>
+              <li class="flex items-center gap-2">✓ Complimentary Bandana</li>
             </ul>
           </div>
-          <a href="booknow.html"
-            class="w-full py-3.5 rounded-xl border border-slate-300 dark:border-slate-700 font-semibold text-sm text-slate-800 dark:text-slate-200 hover:bg-teal-600 hover:text-white hover:border-teal-600 transition-all text-center">
-            Choose Package
-          </a>
+          <a href="booknow.html" class="w-full py-3.5 rounded-xl bg-teal-600 text-white font-semibold text-xs text-center block">Book Small Pet</a>
         </div>
 
-        <!-- Package 2 (Highlighted) -->
-        <div
-          class="glass-card rounded-3xl p-8 border-2 border-teal-500 shadow-xl relative scale-105 bg-gradient-to-b from-teal-500/5 to-transparent equal-height-card">
-          <span
-            class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-teal-600 text-white text-xs font-semibold shadow-md">Most
-            Popular</span>
+        <!-- Medium Pet Card -->
+        <div class="glass-card p-8 rounded-3xl space-y-6 hover:-translate-y-2 transition-all duration-300 border-2 border-teal-500 equal-height-card">
           <div>
-            <span
-              class="px-3 py-1 rounded-full bg-teal-100 dark:bg-teal-900/50 text-xs font-medium text-teal-700 dark:text-teal-300">Full
-              Royal Treatment</span>
-            <h4 class="text-2xl font-heading font-semibold text-slate-900 dark:text-white mt-4 mb-2">PawLuxe Signature
-            </h4>
-            <div class="flex items-baseline gap-1 mb-6">
+            <span class="px-3 py-1 rounded-full bg-teal-600 text-white text-xs font-semibold">Medium Pets (21 - 45 lbs)</span>
+            <h4 class="text-2xl font-heading font-semibold text-slate-900 dark:text-white mt-4">Beagles, Corgis, Persians</h4>
+            <p class="text-xs text-slate-500 mt-1">Cocker Spaniels, Frenchies, Adult Cats</p>
+            <div class="flex items-baseline gap-1 my-6">
+              <span class="text-4xl font-bold font-heading text-slate-900 dark:text-white">$69</span>
+              <span class="text-xs text-slate-500">/ starting rate</span>
+            </div>
+            <ul class="space-y-3 text-xs text-slate-600 dark:text-slate-300">
+              <li class="flex items-center gap-2">✓ Hydro-Massage Ozone Bath</li>
+              <li class="flex items-center gap-2">✓ Full Haircut & Scissor Styling</li>
+              <li class="flex items-center gap-2">✓ Nail Dremel Buffing</li>
+              <li class="flex items-center gap-2">✓ De-Shedding Conditioning</li>
+            </ul>
+          </div>
+          <a href="booknow.html" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-teal-600 to-indigo-600 text-white font-semibold text-xs text-center block">Book Medium Pet</a>
+        </div>
+
+        <!-- Large Pet Card -->
+        <div class="glass-card p-8 rounded-3xl space-y-6 hover:-translate-y-2 transition-all duration-300 equal-height-card">
+          <div>
+            <span class="px-3 py-1 rounded-full bg-indigo-100 dark:bg-indigo-900/40 text-indigo-700 dark:text-indigo-300 text-xs font-semibold">Large Pets (46+ lbs)</span>
+            <h4 class="text-2xl font-heading font-semibold text-slate-900 dark:text-white mt-4">Golden Retrievers, Huskies</h4>
+            <p class="text-xs text-slate-500 mt-1">Labradors, German Shepherds, Doodles</p>
+            <div class="flex items-baseline gap-1 my-6">
               <span class="text-4xl font-bold font-heading text-slate-900 dark:text-white">$89</span>
-              <span class="text-sm text-slate-500">/ session</span>
+              <span class="text-xs text-slate-500">/ starting rate</span>
             </div>
-            <ul class="space-y-3 text-sm text-slate-600 dark:text-slate-300 mb-8">
-              <li class="flex items-center gap-2 font-medium text-slate-900 dark:text-white">✓ All Essential Bath
-                Features</li>
-              <li class="flex items-center gap-2">✓ Breed-Specific Full Styling</li>
+            <ul class="space-y-3 text-xs text-slate-600 dark:text-slate-300">
+              <li class="flex items-center gap-2">✓ Deep Fur De-Matting & Wash</li>
+              <li class="flex items-center gap-2">✓ High-Velocity Blow-Out</li>
+              <li class="flex items-center gap-2">✓ Full Body Precision Trim</li>
               <li class="flex items-center gap-2">✓ Blueberry Facial Treatment</li>
-              <li class="flex items-center gap-2">✓ Dental Enzymatic Brushing</li>
-              <li class="flex items-center gap-2">✓ Paw Pad Conditioning Treatment</li>
             </ul>
           </div>
-          <a href="booknow.html"
-            class="w-full py-3.5 rounded-xl bg-gradient-to-r from-teal-600 to-indigo-600 text-white font-semibold text-sm shadow-md hover:shadow-lg transition-all text-center">
-            Book Signature Care
-          </a>
-        </div>
-
-        <!-- Package 3 -->
-        <div
-          class="glass-card rounded-3xl p-8 border border-slate-200 dark:border-slate-800 hover:border-teal-500 transition-all duration-300 hover:shadow-xl equal-height-card">
-          <div>
-            <span
-              class="px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-xs font-medium text-slate-600 dark:text-slate-300">Ultimate
-              Luxury</span>
-            <h4 class="text-2xl font-heading font-semibold text-slate-900 dark:text-white mt-4 mb-2">VIP Spa & Styling
-            </h4>
-            <div class="flex items-baseline gap-1 mb-6">
-              <span class="text-4xl font-bold font-heading text-slate-900 dark:text-white">$129</span>
-              <span class="text-sm text-slate-500">/ session</span>
-            </div>
-            <ul class="space-y-3 text-sm text-slate-600 dark:text-slate-300 mb-8">
-              <li class="flex items-center gap-2">✓ All Signature Features Included</li>
-              <li class="flex items-center gap-2">✓ Aromatherapy Dead Sea Mud Spa</li>
-              <li class="flex items-center gap-2">✓ Fur Shed-Control Treatment</li>
-              <li class="flex items-center gap-2">✓ Customized Bandana & Bowtie</li>
-              <li class="flex items-center gap-2">✓ VIP Private Lounge Access</li>
-            </ul>
-          </div>
-          <a href="booknow.html"
-            class="w-full py-3.5 rounded-xl border border-slate-300 dark:border-slate-700 font-semibold text-sm text-slate-800 dark:text-slate-200 hover:bg-teal-600 hover:text-white hover:border-teal-600 transition-all text-center">
-            Choose Package
-          </a>
+          <a href="booknow.html" class="w-full py-3.5 rounded-xl bg-indigo-600 text-white font-semibold text-xs text-center block">Book Large Pet</a>
         </div>
 
       </div>
@@ -965,7 +813,7 @@
               alt="Sarah Jenkins" class="w-12 h-12 rounded-full object-cover" />
             <div>
               <h5 class="text-sm font-heading font-semibold text-slate-900 dark:text-white">Sarah Jenkins</h5>
-              <span class="text-xs text-slate-500">Max's Mom (Golden Retriever)</span>
+              <span class="text-xs text-slate-500 dark:text-slate-400">Max's Mom (Golden Retriever)</span>
             </div>
           </div>
         </div>
@@ -981,7 +829,7 @@
               alt="Marcus Vance" class="w-12 h-12 rounded-full object-cover" />
             <div>
               <h5 class="text-sm font-heading font-semibold text-slate-900 dark:text-white">Marcus Vance</h5>
-              <span class="text-xs text-slate-500">Cleo's Dad (Persian Feline)</span>
+              <span class="text-xs text-slate-500 dark:text-slate-400">Cleo's Dad (Persian Feline)</span>
             </div>
           </div>
         </div>
@@ -997,7 +845,7 @@
               alt="Elena Rostova" class="w-12 h-12 rounded-full object-cover" />
             <div>
               <h5 class="text-sm font-heading font-semibold text-slate-900 dark:text-white">Elena Rostova</h5>
-              <span class="text-xs text-slate-500">Bella's Mom (Toy Poodle)</span>
+              <span class="text-xs text-slate-500 dark:text-slate-400">Bella's Mom (Toy Poodle)</span>
             </div>
           </div>
         </div>
@@ -1181,7 +1029,10 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
             </svg>
           </div>
-          <span class="font-heading font-semibold text-2xl tracking-tight text-teal-400">Paw<span class="text-indigo-400">Luxe</span></span>
+          <div>
+            <span class="font-heading font-semibold text-2xl tracking-tight text-teal-400 block">Paw<span class="text-indigo-400">Luxe</span></span>
+            <span class="block text-[10px] uppercase tracking-widest text-slate-400 font-medium">Pet Spa & Salon</span>
+          </div>
         </a>
         <p class="text-sm text-slate-400 max-w-sm leading-relaxed">
           PawLuxe is an award-winning luxury pet grooming and organic spa salon dedicated to providing fear-free, gentle, and world-class care for dogs and cats.
