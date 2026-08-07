@@ -53,7 +53,14 @@
       </a>
 
       <div class="flex items-center gap-3 sm:gap-4">
-        <span class="hidden sm:block font-heading font-medium text-slate-700 dark:text-slate-200 mr-2 lg:mr-4">Good morning, Jane 👋</span>
+        <!-- Profile CTA -->
+        <div class="flex items-center gap-2 mr-2 lg:mr-4 cursor-pointer hover:opacity-80 transition-opacity">
+          <div class="hidden sm:block text-right">
+            <h4 class="font-heading font-semibold text-sm text-slate-900 dark:text-white leading-tight">Jane Doe</h4>
+            <span class="text-[10px] text-teal-600 font-medium leading-none">VIP Gold</span>
+          </div>
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-teal-500 to-indigo-500 text-white flex items-center justify-center font-heading font-bold text-sm shadow-sm">JD</div>
+        </div>
         
         <!-- Dark Mode Toggle -->
         <button type="button" aria-label="Toggle Theme"
@@ -87,14 +94,6 @@
       <!-- SIDEBAR NAV -->
       <aside id="dashboard-sidebar" class="hidden fixed inset-0 top-20 z-40 bg-slate-50/95 dark:bg-slate-950/95 backdrop-blur-xl p-4 sm:p-6 overflow-y-auto lg:static lg:block lg:bg-transparent lg:dark:bg-transparent lg:p-0 lg:overflow-visible lg:w-80 xl:w-96 shrink-0 lg:z-auto">
         <div class="glass-card p-6 lg:p-8 rounded-3xl space-y-6 lg:sticky lg:top-32">
-          <div class="flex items-center gap-3 pb-4 border-b border-slate-200 dark:border-slate-800">
-            <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-teal-500 to-indigo-500 text-white flex items-center justify-center font-heading font-bold text-xl shadow-sm">JD</div>
-            <div>
-              <h4 class="font-heading font-semibold text-sm text-slate-900 dark:text-white">Jane Doe</h4>
-              <span class="text-xs text-teal-600 font-medium">VIP Gold Member</span>
-            </div>
-          </div>
-
           <!-- Responsive Nav Container -->
           <nav class="flex flex-col space-y-2 text-sm w-full transition-all">
             <a href="#" data-tab-target="overview" class="flex-shrink-0 flex items-center gap-4 px-5 py-4 rounded-xl bg-teal-600 text-white font-semibold shadow-md transition-all">

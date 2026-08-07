@@ -181,113 +181,125 @@
         Our Services
       </h2>
     </div>
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  <div class="flex flex-col gap-12">
         
     <!-- Service 1: Dog Grooming -->
-    <div class="glass-card rounded-3xl p-6 flex flex-col justify-between space-y-6 hover:-translate-y-1 transition-all duration-300">
-      <div class="space-y-4">
-        <div class="w-full h-52 rounded-2xl overflow-hidden shadow-sm">
-          <img src="assets/Full Dog Grooming & Styling" alt="Dog Grooming" class="w-full h-full object-cover" />
-        </div>
-        <span class="text-xs font-semibold text-teal-600 dark:text-teal-400 uppercase tracking-wider block">01. Signature Service</span>
-        <h3 class="text-xl font-heading font-semibold text-slate-900 dark:text-white">Full Dog Grooming</h3>
-        <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-          Includes a relaxing hydro-massage bath, breed-specific scissoring, ear flush, sanitary trim, nail buffing, and coat fluff-drying.
-        </p>
+    <div class="glass-card rounded-3xl p-6 md:p-8 flex flex-col md:flex-row gap-8 md:gap-12 items-center hover:-translate-y-1 transition-all duration-300">
+      <div class="w-full md:w-5/12 rounded-2xl overflow-hidden shadow-sm shrink-0">
+        <img src="assets/Full Dog Grooming & Styling" alt="Dog Grooming" class="w-full h-auto object-cover hover:scale-105 transition-transform duration-500" />
       </div>
-      <div class="flex items-center justify-between pt-4 border-t border-slate-200 dark:border-slate-800">
-        <span class="font-heading font-bold text-slate-900 dark:text-white text-base sm:text-lg">Starting at $65</span>
-        <a href="booknow.html" class="px-4 py-2 rounded-xl bg-teal-600 text-white text-xs font-semibold hover:bg-teal-500 transition-colors">Book care</a>
+      <div class="w-full md:w-7/12 flex flex-col justify-center space-y-6">
+        <div>
+          <span class="text-xs font-semibold text-teal-600 dark:text-teal-400 uppercase tracking-wider block mb-2">01. Signature Service</span>
+          <h3 class="text-2xl md:text-3xl font-heading font-semibold text-slate-900 dark:text-white mb-4">Full Dog Grooming</h3>
+          <p class="text-sm md:text-base text-slate-600 dark:text-slate-400 leading-relaxed">
+            Includes a relaxing hydro-massage bath, breed-specific scissoring, ear flush, sanitary trim, nail buffing, and coat fluff-drying.
+          </p>
+        </div>
+        <div class="flex items-center justify-between pt-6 border-t border-slate-200 dark:border-slate-800">
+          <span class="font-heading font-bold text-slate-900 dark:text-white text-xl">Starting at $65</span>
+          <a href="booknow.html" class="px-6 py-3 rounded-xl bg-teal-600 text-white text-sm font-semibold hover:bg-teal-500 transition-colors shadow-md shadow-teal-500/20">Book care</a>
+        </div>
       </div>
     </div>
 
     <!-- Service 2: Cat Grooming -->
-    <div class="glass-card rounded-3xl p-6 flex flex-col justify-between space-y-6 hover:-translate-y-1 transition-all duration-300">
-      <div class="space-y-4">
-        <div class="w-full h-52 rounded-2xl overflow-hidden shadow-sm">
-          <img src="assets/Feline Spa & De-Shedding" alt="Cat Grooming" class="w-full h-full object-cover" />
-        </div>
-        <span class="text-xs font-semibold text-indigo-600 dark:text-indigo-400 uppercase tracking-wider block">02. Feline Care</span>
-        <h3 class="text-xl font-heading font-semibold text-slate-900 dark:text-white">Feline Spa</h3>
-        <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-          Gentle dry/water bath option in quiet private cat suites, nail trimming, eye cleaning, soft coat combing, and lion/teddy trims.
-        </p>
+    <div class="glass-card rounded-3xl p-6 md:p-8 flex flex-col md:flex-row-reverse gap-8 md:gap-12 items-center hover:-translate-y-1 transition-all duration-300">
+      <div class="w-full md:w-5/12 rounded-2xl overflow-hidden shadow-sm shrink-0">
+        <img src="assets/Feline Spa & De-Shedding" alt="Cat Grooming" class="w-full h-auto object-cover hover:scale-105 transition-transform duration-500" />
       </div>
-      <div class="flex items-center justify-between pt-4 border-t border-slate-200 dark:border-slate-800">
-        <span class="font-heading font-bold text-slate-900 dark:text-white text-base sm:text-lg">Starting at $75</span>
-        <a href="booknow.html" class="px-4 py-2 rounded-xl bg-indigo-600 text-white text-xs font-semibold hover:bg-indigo-500 transition-colors">Book Care</a>
+      <div class="w-full md:w-7/12 flex flex-col justify-center space-y-6">
+        <div>
+          <span class="text-xs font-semibold text-indigo-600 dark:text-indigo-400 uppercase tracking-wider block mb-2">02. Feline Care</span>
+          <h3 class="text-2xl md:text-3xl font-heading font-semibold text-slate-900 dark:text-white mb-4">Feline Spa</h3>
+          <p class="text-sm md:text-base text-slate-600 dark:text-slate-400 leading-relaxed">
+            Gentle dry/water bath option in quiet private cat suites, nail trimming, eye cleaning, soft coat combing, and lion/teddy trims.
+          </p>
+        </div>
+        <div class="flex items-center justify-between pt-6 border-t border-slate-200 dark:border-slate-800">
+          <span class="font-heading font-bold text-slate-900 dark:text-white text-xl">Starting at $75</span>
+          <a href="booknow.html" class="px-6 py-3 rounded-xl bg-indigo-600 text-white text-sm font-semibold hover:bg-indigo-500 transition-colors shadow-md shadow-indigo-500/20">Book Care</a>
+        </div>
       </div>
     </div>
 
     <!-- Service 3: Bath & Spa -->
-    <div class="glass-card rounded-3xl p-6 flex flex-col justify-between space-y-6 hover:-translate-y-1 transition-all duration-300">
-      <div class="space-y-4">
-        <div class="w-full h-52 rounded-2xl overflow-hidden shadow-sm">
-          <img src="assets/Organic Hydro-Massage Bath" alt="Bath Spa Treatment" class="w-full h-full object-cover" />
-        </div>
-        <span class="text-xs font-semibold text-teal-600 dark:text-teal-400 uppercase tracking-wider block">03. Hydro Therapy</span>
-        <h3 class="text-xl font-heading font-semibold text-slate-900 dark:text-white">Organic Hydro-Massage</h3>
-        <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-          Warm ozone bubble jet bath paired with sulfate-free oatmeal or lavender shampoo to revitalize coat shine and relax muscles.
-        </p>
+    <div class="glass-card rounded-3xl p-6 md:p-8 flex flex-col md:flex-row gap-8 md:gap-12 items-center hover:-translate-y-1 transition-all duration-300">
+      <div class="w-full md:w-5/12 rounded-2xl overflow-hidden shadow-sm shrink-0">
+        <img src="assets/Organic Hydro-Massage Bath" alt="Bath Spa Treatment" class="w-full h-auto object-cover hover:scale-105 transition-transform duration-500" />
       </div>
-      <div class="flex items-center justify-between pt-4 border-t border-slate-200 dark:border-slate-800">
-        <span class="font-heading font-bold text-slate-900 dark:text-white text-base sm:text-lg">Starting at $45</span>
-        <a href="booknow.html" class="px-4 py-2 rounded-xl bg-teal-600 text-white text-xs font-semibold hover:bg-teal-500 transition-colors">Book Bath</a>
+      <div class="w-full md:w-7/12 flex flex-col justify-center space-y-6">
+        <div>
+          <span class="text-xs font-semibold text-teal-600 dark:text-teal-400 uppercase tracking-wider block mb-2">03. Hydro Therapy</span>
+          <h3 class="text-2xl md:text-3xl font-heading font-semibold text-slate-900 dark:text-white mb-4">Organic Hydro-Massage</h3>
+          <p class="text-sm md:text-base text-slate-600 dark:text-slate-400 leading-relaxed">
+            Warm ozone bubble jet bath paired with sulfate-free oatmeal or lavender shampoo to revitalize coat shine and relax muscles.
+          </p>
+        </div>
+        <div class="flex items-center justify-between pt-6 border-t border-slate-200 dark:border-slate-800">
+          <span class="font-heading font-bold text-slate-900 dark:text-white text-xl">Starting at $45</span>
+          <a href="booknow.html" class="px-6 py-3 rounded-xl bg-teal-600 text-white text-sm font-semibold hover:bg-teal-500 transition-colors shadow-md shadow-teal-500/20">Book Bath</a>
+        </div>
       </div>
     </div>
 
     <!-- Service 4: Nail Trimming & Buffing -->
-    <div class="glass-card rounded-3xl p-6 flex flex-col justify-between space-y-6 hover:-translate-y-1 transition-all duration-300">
-      <div class="space-y-4">
-        <div class="w-full h-52 rounded-2xl overflow-hidden shadow-sm">
-          <img src="assets/Nail Trimming & Smooth Buffing" alt="Nail Trimming" class="w-full h-full object-cover" />
-        </div>
-        <span class="text-xs font-semibold text-indigo-600 dark:text-indigo-400 uppercase tracking-wider block">04. Paw Care</span>
-        <h3 class="text-xl font-heading font-semibold text-slate-900 dark:text-white">Nail Trimming & Buffing</h3>
-        <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-          Precision dremel nail rounding to eliminate sharp edges, combined with organic coconut oil paw pad massage conditioning.
-        </p>
+    <div class="glass-card rounded-3xl p-6 md:p-8 flex flex-col md:flex-row-reverse gap-8 md:gap-12 items-center hover:-translate-y-1 transition-all duration-300">
+      <div class="w-full md:w-5/12 rounded-2xl overflow-hidden shadow-sm shrink-0">
+        <img src="assets/Nail Trimming & Smooth Buffing" alt="Nail Trimming" class="w-full h-auto object-cover hover:scale-105 transition-transform duration-500" />
       </div>
-      <div class="flex items-center justify-between pt-4 border-t border-slate-200 dark:border-slate-800">
-        <span class="font-heading font-bold text-slate-900 dark:text-white text-base sm:text-lg">Starting at $25</span>
-        <a href="booknow.html" class="px-4 py-2 rounded-xl bg-indigo-600 text-white text-xs font-semibold hover:bg-indigo-500 transition-colors">Book Care</a>
+      <div class="w-full md:w-7/12 flex flex-col justify-center space-y-6">
+        <div>
+          <span class="text-xs font-semibold text-indigo-600 dark:text-indigo-400 uppercase tracking-wider block mb-2">04. Paw Care</span>
+          <h3 class="text-2xl md:text-3xl font-heading font-semibold text-slate-900 dark:text-white mb-4">Nail Trimming & Buffing</h3>
+          <p class="text-sm md:text-base text-slate-600 dark:text-slate-400 leading-relaxed">
+            Precision dremel nail rounding to eliminate sharp edges, combined with organic coconut oil paw pad massage conditioning.
+          </p>
+        </div>
+        <div class="flex items-center justify-between pt-6 border-t border-slate-200 dark:border-slate-800">
+          <span class="font-heading font-bold text-slate-900 dark:text-white text-xl">Starting at $25</span>
+          <a href="booknow.html" class="px-6 py-3 rounded-xl bg-indigo-600 text-white text-sm font-semibold hover:bg-indigo-500 transition-colors shadow-md shadow-indigo-500/20">Book Care</a>
+        </div>
       </div>
     </div>
 
     <!-- Service 5: Dental Hygiene -->
-    <div class="glass-card rounded-3xl p-6 flex flex-col justify-between space-y-6 hover:-translate-y-1 transition-all duration-300">
-      <div class="space-y-4">
-        <div class="w-full h-52 rounded-2xl overflow-hidden shadow-sm">
-          <img src="assets/Enzymatic Tooth Brushing & Breath Refresh" alt="Dental Care" class="w-full h-full object-cover" />
-        </div>
-        <span class="text-xs font-semibold text-teal-600 dark:text-teal-400 uppercase tracking-wider block">05. Dental Care</span>
-        <h3 class="text-xl font-heading font-semibold text-slate-900 dark:text-white">Enzymatic Tooth Brushing</h3>
-        <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-          Gentle plaque brushing with vanilla-mint enzymatic toothpaste and fresh breath oral spray for optimal oral hygiene.
-        </p>
+    <div class="glass-card rounded-3xl p-6 md:p-8 flex flex-col md:flex-row gap-8 md:gap-12 items-center hover:-translate-y-1 transition-all duration-300">
+      <div class="w-full md:w-5/12 rounded-2xl overflow-hidden shadow-sm shrink-0">
+        <img src="assets/Enzymatic Tooth Brushing & Breath Refresh" alt="Dental Care" class="w-full h-auto object-cover hover:scale-105 transition-transform duration-500" />
       </div>
-      <div class="flex items-center justify-between pt-4 border-t border-slate-200 dark:border-slate-800">
-        <span class="font-heading font-bold text-slate-900 dark:text-white text-base sm:text-lg">Starting at $20</span>
-        <a href="booknow.html" class="px-4 py-2 rounded-xl bg-teal-600 text-white text-xs font-semibold hover:bg-teal-500 transition-colors">Book Care</a>
+      <div class="w-full md:w-7/12 flex flex-col justify-center space-y-6">
+        <div>
+          <span class="text-xs font-semibold text-teal-600 dark:text-teal-400 uppercase tracking-wider block mb-2">05. Dental Care</span>
+          <h3 class="text-2xl md:text-3xl font-heading font-semibold text-slate-900 dark:text-white mb-4">Enzymatic Tooth Brushing</h3>
+          <p class="text-sm md:text-base text-slate-600 dark:text-slate-400 leading-relaxed">
+            Gentle plaque brushing with vanilla-mint enzymatic toothpaste and fresh breath oral spray for optimal oral hygiene.
+          </p>
+        </div>
+        <div class="flex items-center justify-between pt-6 border-t border-slate-200 dark:border-slate-800">
+          <span class="font-heading font-bold text-slate-900 dark:text-white text-xl">Starting at $20</span>
+          <a href="booknow.html" class="px-6 py-3 rounded-xl bg-teal-600 text-white text-sm font-semibold hover:bg-teal-500 transition-colors shadow-md shadow-teal-500/20">Book Care</a>
+        </div>
       </div>
     </div>
 
     <!-- Service 6: Emergency Skunk Wash -->
-    <div class="glass-card rounded-3xl p-6 flex flex-col justify-between space-y-6 hover:-translate-y-1 transition-all duration-300">
-      <div class="space-y-4">
-        <div class="w-full h-52 rounded-2xl overflow-hidden shadow-sm">
-          <img src="assets/Emergency Skunk Odor & Mud Wash" alt="Emergency Bath" class="w-full h-full object-cover" />
-        </div>
-        <span class="text-xs font-semibold text-indigo-600 dark:text-indigo-400 uppercase tracking-wider block">06. Emergency Care</span>
-        <h3 class="text-xl font-heading font-semibold text-slate-900 dark:text-white">Emergency Skunk & Wash</h3>
-        <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-          Specialized enzymatic neutralizing wash that breaks down tough skunk oils and restores fur freshness safely.
-        </p>
+    <div class="glass-card rounded-3xl p-6 md:p-8 flex flex-col md:flex-row-reverse gap-8 md:gap-12 items-center hover:-translate-y-1 transition-all duration-300">
+      <div class="w-full md:w-5/12 rounded-2xl overflow-hidden shadow-sm shrink-0">
+        <img src="assets/Emergency Skunk Odor & Mud Wash" alt="Emergency Bath" class="w-full h-auto object-cover hover:scale-105 transition-transform duration-500" />
       </div>
-      <div class="flex items-center justify-between pt-4 border-t border-slate-200 dark:border-slate-800">
-        <span class="font-heading font-bold text-slate-900 dark:text-white text-base sm:text-lg">Starting at $85</span>
-        <a href="booknow.html" class="px-4 py-2 rounded-xl bg-indigo-600 text-white text-xs font-semibold hover:bg-indigo-500 transition-colors">Book Care</a>
+      <div class="w-full md:w-7/12 flex flex-col justify-center space-y-6">
+        <div>
+          <span class="text-xs font-semibold text-indigo-600 dark:text-indigo-400 uppercase tracking-wider block mb-2">06. Emergency Care</span>
+          <h3 class="text-2xl md:text-3xl font-heading font-semibold text-slate-900 dark:text-white mb-4">Emergency Skunk & Wash</h3>
+          <p class="text-sm md:text-base text-slate-600 dark:text-slate-400 leading-relaxed">
+            Specialized enzymatic neutralizing wash that breaks down tough skunk oils and restores fur freshness safely.
+          </p>
+        </div>
+        <div class="flex items-center justify-between pt-6 border-t border-slate-200 dark:border-slate-800">
+          <span class="font-heading font-bold text-slate-900 dark:text-white text-xl">Starting at $85</span>
+          <a href="booknow.html" class="px-6 py-3 rounded-xl bg-indigo-600 text-white text-sm font-semibold hover:bg-indigo-500 transition-colors shadow-md shadow-indigo-500/20">Book Care</a>
+        </div>
       </div>
     </div>
 
@@ -393,7 +405,7 @@
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         
         <article class="glass-card rounded-3xl overflow-hidden hover:-translate-y-2 transition-all duration-300 equal-height-card">
-          <img src="assets/h21" alt="Brushing Tips" class="w-full h-48 object-cover object-top" />
+          <img src="assets/indexbg" alt="Brushing Tips" class="w-full h-48 object-cover object-center" />
           <div class="p-6">
             <span class="text-xs font-semibold text-teal-600 dark:text-teal-400">Coat Maintenance</span>
             <h4 class="text-lg font-heading font-semibold text-slate-900 dark:text-white mt-1 mb-2">How To Prevent Coat Matting Between Spa Visits</h4>
@@ -404,7 +416,7 @@
         </article>
 
         <article class="glass-card rounded-3xl overflow-hidden hover:-translate-y-2 transition-all duration-300 equal-height-card">
-          <img src="assets/h22" alt="Dental Care Tips" class="w-full h-48 object-cover object-top" />
+          <img src="assets/img1" alt="Dental Care Tips" class="w-full h-48 object-cover object-center" />
           <div class="p-6">
             <span class="text-xs font-semibold text-indigo-600 dark:text-indigo-400">Dental Health</span>
             <h4 class="text-lg font-heading font-semibold text-slate-900 dark:text-white mt-1 mb-2">5 Secrets To Keeping Canine Teeth Fresh & Clean</h4>
@@ -415,7 +427,7 @@
         </article>
 
         <article class="glass-card rounded-3xl overflow-hidden hover:-translate-y-2 transition-all duration-300 equal-height-card">
-          <img src="assets/h23" alt="Cat Spa Tips" class="w-full h-48 object-cover object-top" />
+          <img src="assets/img2" alt="Cat Spa Tips" class="w-full h-48 object-cover object-center" />
           <div class="p-6">
             <span class="text-xs font-semibold text-amber-600 dark:text-amber-400">Feline Wellness</span>
             <h4 class="text-lg font-heading font-semibold text-slate-900 dark:text-white mt-1 mb-2">Understanding Your Cat's Calming Cues During Spa Days</h4>
