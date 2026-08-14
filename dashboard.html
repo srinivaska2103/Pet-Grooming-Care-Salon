@@ -347,39 +347,146 @@
 
         <!-- 2. MY PETS TAB -->
         <div data-tab-category="pets" class="space-y-6 hidden animate-fade-in">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <!-- Pet Card 1 -->
-            <div class="p-6 rounded-3xl bg-white dark:bg-[#111726] border border-slate-200/80 dark:border-slate-800/80 space-y-4 shadow-md dark:shadow-lg transition-colors duration-300">
-              <div class="flex items-center gap-4">
-                <img src="assets/g1" alt="Max" class="w-16 h-16 rounded-2xl object-cover ring-2 ring-accent-500/50" />
-                <div>
-                  <h3 class="font-heading font-bold text-xl text-slate-900 dark:text-white">Max</h3>
-                  <span class="text-xs text-accent-600 dark:text-accent-400 font-semibold">Golden Retriever</span>
+          
+          <!-- Top Action Bar -->
+          <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 p-5 rounded-3xl bg-white dark:bg-[#111726] border border-slate-200/80 dark:border-slate-800/80 shadow-md transition-colors duration-300">
+            <div>
+              <h3 class="text-base font-bold text-slate-900 dark:text-white">Registered Pet Profiles (2)</h3>
+              <p class="text-xs text-slate-500 dark:text-slate-400">Manage medical records, vaccination dates, and favorite spa treatments.</p>
+            </div>
+            <button type="button" class="px-4 py-2.5 bg-gradient-to-r from-teal-500 to-indigo-600 hover:from-teal-600 hover:to-indigo-700 text-white font-bold text-xs rounded-xl shadow-lg shadow-teal-500/25 transition-all shrink-0">
+              + Register New Pet
+            </button>
+          </div>
+
+          <!-- Pet Cards Grid -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            
+            <!-- Pet Card 1: Max -->
+            <div class="p-6 rounded-3xl bg-white dark:bg-[#111726] border border-slate-200/80 dark:border-slate-800/80 space-y-5 shadow-md dark:shadow-lg transition-colors duration-300">
+              <div class="flex items-start justify-between">
+                <div class="flex items-center gap-4">
+                  <div class="relative">
+                    <img src="assets/g1" alt="Max" class="w-16 h-16 rounded-2xl object-cover ring-4 ring-teal-500/20" />
+                    <span class="absolute bottom-0 right-0 w-4 h-4 bg-emerald-500 border-2 border-white dark:border-[#111726] rounded-full"></span>
+                  </div>
+                  <div>
+                    <div class="flex items-center gap-2">
+                      <h3 class="font-heading font-bold text-xl text-slate-900 dark:text-white">Max</h3>
+                      <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-teal-100 text-teal-700 dark:bg-teal-500/20 dark:text-teal-400">Dog</span>
+                    </div>
+                    <span class="text-xs text-teal-600 dark:text-teal-400 font-semibold">Golden Retriever &bull; 3 Yrs Old</span>
+                  </div>
+                </div>
+                <button type="button" class="text-xs font-bold text-slate-400 hover:text-slate-700 dark:hover:text-white px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 transition-colors">Edit</button>
+              </div>
+
+              <!-- Quick Stats Bar -->
+              <div class="grid grid-cols-4 gap-2 text-center text-xs p-3 rounded-2xl bg-slate-50 dark:bg-slate-900/60 border border-slate-200/60 dark:border-slate-800">
+                <div><span class="block text-[10px] text-slate-400 font-semibold uppercase">Weight</span><strong class="text-slate-900 dark:text-white font-bold">65 lbs</strong></div>
+                <div><span class="block text-[10px] text-slate-400 font-semibold uppercase">Gender</span><strong class="text-slate-900 dark:text-white font-bold">Male</strong></div>
+                <div><span class="block text-[10px] text-slate-400 font-semibold uppercase">Neutered</span><strong class="text-emerald-600 dark:text-emerald-400 font-bold">Yes</strong></div>
+                <div><span class="block text-[10px] text-slate-400 font-semibold uppercase">Coat</span><strong class="text-slate-900 dark:text-white font-bold">Long</strong></div>
+              </div>
+
+              <!-- Health & Vaccine Status -->
+              <div class="space-y-2 pt-1">
+                <span class="text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider text-[10px]">Vaccination Records</span>
+                <div class="flex flex-wrap gap-2 text-xs">
+                  <span class="px-3 py-1 rounded-xl bg-emerald-100 text-emerald-800 dark:bg-emerald-500/20 dark:text-emerald-300 font-semibold text-[11px] flex items-center gap-1.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> Rabies (Exp Dec 2026)
+                  </span>
+                  <span class="px-3 py-1 rounded-xl bg-emerald-100 text-emerald-800 dark:bg-emerald-500/20 dark:text-emerald-300 font-semibold text-[11px] flex items-center gap-1.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> DHPP (Up-to-date)
+                  </span>
+                  <span class="px-3 py-1 rounded-xl bg-indigo-100 text-indigo-800 dark:bg-indigo-500/20 dark:text-indigo-300 font-semibold text-[11px] flex items-center gap-1.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-indigo-500"></span> Bordetella (Current)
+                  </span>
                 </div>
               </div>
-              <div class="grid grid-cols-3 gap-2 text-center text-xs divide-x divide-slate-100 dark:divide-slate-800 pt-2">
-                <div><span class="block text-slate-400">Age</span><strong class="text-slate-900 dark:text-white text-sm">3 Yrs</strong></div>
-                <div><span class="block text-slate-400">Weight</span><strong class="text-slate-900 dark:text-white text-sm">65 lbs</strong></div>
-                <div><span class="block text-slate-400">Gender</span><strong class="text-slate-900 dark:text-white text-sm">Male</strong></div>
+
+              <!-- Favorite Spa Package -->
+              <div class="p-3.5 rounded-2xl bg-amber-50/70 dark:bg-amber-950/20 border border-amber-200/60 dark:border-amber-900/40 text-xs">
+                <span class="text-[10px] font-bold text-amber-800 dark:text-amber-400 uppercase tracking-wider">Favorite Spa Package</span>
+                <p class="font-bold text-slate-900 dark:text-white mt-0.5">VIP Mud Mask & Full De-Shedding Bath ($129)</p>
+              </div>
+
+              <!-- Actions -->
+              <div class="pt-2 flex items-center justify-between gap-3 border-t border-slate-100 dark:border-slate-800">
+                <span class="text-[11px] text-slate-400 font-semibold">Microchip: #98514109283</span>
+                <a href="booknow.html" class="px-4 py-2 bg-gradient-to-r from-teal-500 to-indigo-600 hover:from-teal-600 hover:to-indigo-700 text-white font-bold text-xs rounded-xl shadow-md transition-all">Book Spa for Max &rarr;</a>
               </div>
             </div>
 
-            <!-- Pet Card 2 -->
-            <div class="p-6 rounded-3xl bg-white dark:bg-[#111726] border border-slate-200/80 dark:border-slate-800/80 space-y-4 shadow-md dark:shadow-lg transition-colors duration-300">
-              <div class="flex items-center gap-4">
-                <img src="assets/g2" alt="Cleo" class="w-16 h-16 rounded-2xl object-cover ring-2 ring-indigo-500/50" />
-                <div>
-                  <h3 class="font-heading font-bold text-xl text-slate-900 dark:text-white">Cleo</h3>
-                  <span class="text-xs text-indigo-600 dark:text-indigo-400 font-semibold">Persian Feline</span>
+            <!-- Pet Card 2: Cleo -->
+            <div class="p-6 rounded-3xl bg-white dark:bg-[#111726] border border-slate-200/80 dark:border-slate-800/80 space-y-5 shadow-md dark:shadow-lg transition-colors duration-300">
+              <div class="flex items-start justify-between">
+                <div class="flex items-center gap-4">
+                  <div class="relative">
+                    <img src="assets/g2" alt="Cleo" class="w-16 h-16 rounded-2xl object-cover ring-4 ring-indigo-500/20" />
+                    <span class="absolute bottom-0 right-0 w-4 h-4 bg-emerald-500 border-2 border-white dark:border-[#111726] rounded-full"></span>
+                  </div>
+                  <div>
+                    <div class="flex items-center gap-2">
+                      <h3 class="font-heading font-bold text-xl text-slate-900 dark:text-white">Cleo</h3>
+                      <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-indigo-100 text-indigo-700 dark:bg-indigo-500/20 dark:text-indigo-400">Cat</span>
+                    </div>
+                    <span class="text-xs text-indigo-600 dark:text-indigo-400 font-semibold">Persian Feline &bull; 2 Yrs Old</span>
+                  </div>
+                </div>
+                <button type="button" class="text-xs font-bold text-slate-400 hover:text-slate-700 dark:hover:text-white px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 transition-colors">Edit</button>
+              </div>
+
+              <!-- Quick Stats Bar -->
+              <div class="grid grid-cols-4 gap-2 text-center text-xs p-3 rounded-2xl bg-slate-50 dark:bg-slate-900/60 border border-slate-200/60 dark:border-slate-800">
+                <div><span class="block text-[10px] text-slate-400 font-semibold uppercase">Weight</span><strong class="text-slate-900 dark:text-white font-bold">9 lbs</strong></div>
+                <div><span class="block text-[10px] text-slate-400 font-semibold uppercase">Gender</span><strong class="text-slate-900 dark:text-white font-bold">Female</strong></div>
+                <div><span class="block text-[10px] text-slate-400 font-semibold uppercase">Spayed</span><strong class="text-emerald-600 dark:text-emerald-400 font-bold">Yes</strong></div>
+                <div><span class="block text-[10px] text-slate-400 font-semibold uppercase">Coat</span><strong class="text-slate-900 dark:text-white font-bold">Soft Long</strong></div>
+              </div>
+
+              <!-- Health & Vaccine Status -->
+              <div class="space-y-2 pt-1">
+                <span class="text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider text-[10px]">Vaccination Records</span>
+                <div class="flex flex-wrap gap-2 text-xs">
+                  <span class="px-3 py-1 rounded-xl bg-amber-100 text-amber-800 dark:bg-amber-500/20 dark:text-amber-300 font-semibold text-[11px] flex items-center gap-1.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span> Rabies (Due in 60 Days)
+                  </span>
+                  <span class="px-3 py-1 rounded-xl bg-emerald-100 text-emerald-800 dark:bg-emerald-500/20 dark:text-emerald-300 font-semibold text-[11px] flex items-center gap-1.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> FVRCP (Exp Oct 2026)
+                  </span>
                 </div>
               </div>
-              <div class="grid grid-cols-3 gap-2 text-center text-xs divide-x divide-slate-100 dark:divide-slate-800 pt-2">
-                <div><span class="block text-slate-400">Age</span><strong class="text-slate-900 dark:text-white text-sm">2 Yrs</strong></div>
-                <div><span class="block text-slate-400">Weight</span><strong class="text-slate-900 dark:text-white text-sm">9 lbs</strong></div>
-                <div><span class="block text-slate-400">Gender</span><strong class="text-slate-900 dark:text-white text-sm">Female</strong></div>
+
+              <!-- Favorite Spa Package -->
+              <div class="p-3.5 rounded-2xl bg-teal-50/70 dark:bg-teal-950/20 border border-teal-200/60 dark:border-teal-900/40 text-xs">
+                <span class="text-[10px] font-bold text-teal-800 dark:text-teal-400 uppercase tracking-wider">Favorite Spa Package</span>
+                <p class="font-bold text-slate-900 dark:text-white mt-0.5">Feline De-Shedding & Ear Care Bath ($75)</p>
+              </div>
+
+              <!-- Actions -->
+              <div class="pt-2 flex items-center justify-between gap-3 border-t border-slate-100 dark:border-slate-800">
+                <span class="text-[11px] text-slate-400 font-semibold">Microchip: #98514109881</span>
+                <a href="booknow.html" class="px-4 py-2 bg-gradient-to-r from-teal-500 to-indigo-600 hover:from-teal-600 hover:to-indigo-700 text-white font-bold text-xs rounded-xl shadow-md transition-all">Book Spa for Cleo &rarr;</a>
               </div>
             </div>
+
           </div>
+
+          <!-- Vet Records Upload Banner -->
+          <div class="p-5 rounded-3xl bg-indigo-50/70 dark:bg-indigo-950/30 border border-indigo-200/80 dark:border-indigo-900/50 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div class="flex items-center gap-3.5">
+              <div class="w-10 h-10 rounded-2xl bg-indigo-600 text-white flex items-center justify-center font-bold text-base shrink-0 shadow-md">
+                💉
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-slate-900 dark:text-white">Keep Vet & Vaccination Documents Updated</h4>
+                <p class="text-xs text-slate-600 dark:text-slate-300">Upload your latest PDF vet records so our groomers are informed before every appointment.</p>
+              </div>
+            </div>
+            <button type="button" class="px-4 py-2.5 bg-slate-900 hover:bg-slate-800 dark:bg-white dark:hover:bg-slate-100 text-white dark:text-slate-900 text-xs font-bold rounded-xl transition-colors shrink-0">Upload Vet Record (PDF)</button>
+          </div>
+
         </div>
 
         <!-- 3. APPOINTMENTS TAB -->
