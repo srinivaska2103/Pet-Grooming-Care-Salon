@@ -179,6 +179,7 @@ function initTabs() {
   tabContainers.forEach(container => {
     const tabButtons = container.querySelectorAll('[data-tab-target]');
     const tabItems = container.querySelectorAll('[data-tab-category]');
+    const titleEl = document.getElementById('current-tab-title');
     
     tabButtons.forEach(btn => {
       btn.addEventListener('click', (e) => {
@@ -189,13 +190,24 @@ function initTabs() {
         const target = btn.getAttribute('data-tab-target');
         
         tabButtons.forEach(b => {
-          b.classList.remove('bg-teal-600', 'text-white', 'shadow-md', 'shadow-lg');
-          b.classList.add('bg-slate-100', 'dark:bg-slate-800', 'text-slate-600', 'dark:text-slate-300');
-          b.classList.remove('font-semibold');
+          b.classList.remove('bg-accent-600', 'bg-teal-600', 'bg-teal-500', 'bg-emerald-600', 'bg-indigo-600', 'text-white', 'shadow-lg', 'shadow-accent-600/30', 'shadow-teal-500/20', 'font-bold');
+          b.classList.add('text-slate-600', 'dark:text-slate-300', 'hover:text-slate-900', 'dark:hover:text-white', 'hover:bg-slate-100', 'dark:hover:bg-slate-800/60', 'font-semibold');
         });
         
-        btn.classList.add('bg-teal-600', 'text-white', 'shadow-md', 'font-semibold');
-        btn.classList.remove('bg-slate-100', 'dark:bg-slate-800', 'text-slate-600', 'dark:text-slate-300', 'hover:bg-slate-100', 'dark:hover:bg-slate-800');
+        btn.classList.add('bg-accent-600', 'text-white', 'shadow-lg', 'shadow-accent-600/30', 'font-bold');
+        btn.classList.remove('text-slate-600', 'dark:text-slate-300', 'hover:text-slate-900', 'dark:hover:text-white', 'hover:bg-slate-100', 'dark:hover:bg-slate-800/60', 'font-semibold');
+
+        if (titleEl) {
+          const tabNames = {
+            'overview': 'Dashboard',
+            'pets': 'My Pets',
+            'history': 'Appointments',
+            'invoices': 'Invoices & Billing',
+            'notifications': 'Notifications',
+            'settings': 'Settings'
+          };
+          if (tabNames[target]) titleEl.textContent = tabNames[target];
+        }
 
         tabItems.forEach(item => {
           const category = item.getAttribute('data-tab-category');
