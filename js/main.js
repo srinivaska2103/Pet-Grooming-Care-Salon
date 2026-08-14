@@ -190,12 +190,22 @@ function initTabs() {
         const target = btn.getAttribute('data-tab-target');
         
         tabButtons.forEach(b => {
-          b.classList.remove('bg-accent-600', 'bg-teal-600', 'bg-teal-500', 'bg-emerald-600', 'bg-indigo-600', 'text-white', 'shadow-lg', 'shadow-accent-600/30', 'shadow-teal-500/20', 'font-bold');
-          b.classList.add('text-slate-600', 'dark:text-slate-300', 'hover:text-slate-900', 'dark:hover:text-white', 'hover:bg-slate-100', 'dark:hover:bg-slate-800/60', 'font-semibold');
+          b.classList.remove('bg-gradient-to-r', 'from-teal-500', 'via-teal-600', 'to-indigo-600', 'from-teal-600', 'bg-blue-600', 'bg-accent-600', 'bg-teal-600', 'text-white', 'shadow-lg', 'shadow-teal-500/25', 'shadow-blue-500/30', 'shadow-accent-600/30', 'font-bold');
+          b.classList.add('text-slate-700', 'dark:text-slate-300', 'hover:text-slate-900', 'dark:hover:text-white', 'hover:bg-slate-100', 'dark:hover:bg-slate-800/60', 'font-semibold');
+          const svg = b.querySelector('svg');
+          if (svg) {
+            svg.classList.remove('text-white');
+            svg.classList.add('text-slate-600', 'dark:text-slate-400');
+          }
         });
         
-        btn.classList.add('bg-accent-600', 'text-white', 'shadow-lg', 'shadow-accent-600/30', 'font-bold');
-        btn.classList.remove('text-slate-600', 'dark:text-slate-300', 'hover:text-slate-900', 'dark:hover:text-white', 'hover:bg-slate-100', 'dark:hover:bg-slate-800/60', 'font-semibold');
+        btn.classList.add('bg-gradient-to-r', 'from-teal-500', 'to-indigo-600', 'text-white', 'shadow-lg', 'shadow-teal-500/25', 'font-bold');
+        btn.classList.remove('text-slate-700', 'dark:text-slate-300', 'hover:text-slate-900', 'dark:hover:text-white', 'hover:bg-slate-100', 'dark:hover:bg-slate-800/60', 'font-semibold');
+        const activeSvg = btn.querySelector('svg');
+        if (activeSvg) {
+          activeSvg.classList.remove('text-slate-600', 'dark:text-slate-400');
+          activeSvg.classList.add('text-white');
+        }
 
         if (titleEl) {
           const tabNames = {
